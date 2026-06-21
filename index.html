@@ -1,0 +1,1835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ── PRIMARY SEO META ── -->
+<title>Imen Ferjani — Mathematician | Functional Analysis & Operator Theory</title>
+<meta name="description" content="Dr. Imen Ferjani — PhD in Mathematics, researcher at the University of Sfax. Specialist in Functional Analysis, Operator Theory, Spectral Theory, and Demicompact Operators. 12 published articles, editorial board member, active conference speaker.">
+<meta name="keywords" content="Imen Ferjani, Operator Theory, Spectral Theory, Fredholm Theory, Banach Lattices, Functional Analysis, Demicompact Operators, Weakly Demicompact Operators, Generalized Weakly Demicompact Operators, Strictly Singular Operators, Measures of Noncompactness, Essential Spectrum, Pseudospectra, Linear Relations, Block Operator Matrices, Lattice-Normed Spaces, Weak Compactness, Positive Operators, Volterra Operators, Integral Operators, Compactness Criteria, Tunisia, ENIT, Faculty of Sciences of Sfax, University of Sfax">
+<meta name="author" content="Imen Ferjani">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://imenferjani.netlify.app/">
+
+<!-- ── FAVICON & APPLE TOUCH ICON ── -->
+<link rel="icon" type="image/png" sizes="64x64" href="icons/favicon2.png">
+<link rel="apple-touch-icon" href="icons/favicon2.png">
+
+<!-- GoatCounter Analytics -->
+<script data-goatcounter="https://imen.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js">
+</script>
+
+<!-- ── OPEN GRAPH (Facebook / LinkedIn preview) ── -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Imen Ferjani — Mathematician | Functional Analysis & Operator Theory">
+<meta property="og:description" content="PhD in Mathematics, researcher at the University of Sfax. Specialist in Functional Analysis, Operator Theory and Spectral Theory. 12 published articles, h-index 4.">
+<meta property="og:url" content="https://imenferjani.netlify.app/">
+<meta property="og:image" content="https://imenferjani.netlify.app/photo_cv.png">
+<meta property="og:image:alt" content="Dr. Imen Ferjani — Mathematician">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="profile:first_name" content="Imen">
+<meta property="profile:last_name" content="Ferjani">
+
+<!-- ── TWITTER CARD ── -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Imen Ferjani — Mathematician | Functional Analysis & Operator Theory">
+<meta name="twitter:description" content="PhD in Mathematics, researcher at the University of Sfax. 12 published articles in Functional Analysis and Operator Theory.">
+<meta name="twitter:image" content="https://imenferjani.netlify.app/photo_cv.png">
+
+<!-- ── STRUCTURED DATA (Schema.org Person) ── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Imen Ferjani",
+  "givenName": "Imen",
+  "familyName": "Ferjani",
+  "jobTitle": "Researcher in Mathematics",
+  "description": "PhD in Mathematics specializing in Functional Analysis, Operator Theory, and Spectral Theory.",
+  "url": "https://imenferjani.netlify.app",
+  "image": "https://imenferjani.netlify.app/photo_cv.png",
+  "email": "imenoferjani@yahoo.fr",
+  "sameAs": [
+    "https://orcid.org/0000-0003-1482-4804",
+    "https://scholar.google.com/citations?user=QKMAQkEAAAAJ",
+    "https://www.researchgate.net/profile/Imen-Ferjani",
+    "https://www.linkedin.com/in/imen-ferjani/",
+    "https://www.scopus.com/authid/detail.uri?authorId=57206938166",
+    "https://mathscinet.ams.org/mathscinet/MRAuthorID/1309981"
+  ],
+  "affiliation": {
+    "@type": "Organization",
+    "name": "Faculty of Sciences of Sfax, University of Sfax",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sfax",
+      "addressCountry": "TN"
+    }
+  },
+  "alumniOf": [
+    {
+      "@type": "EducationalOrganization",
+      "name": "Faculty of Sciences of Sfax, University of Sfax"
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "Faculty of Sciences of Monastir, University of Monastir"
+    }
+  ],
+  "knowsAbout": ["Functional Analysis", "Operator Theory", "Spectral Theory", "Fredholm Theory", "Banach Lattices", "Demicompact Operators"],
+  "knowsLanguage": ["Arabic", "French", "English"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+/* ── RESET & TOKENS ── */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --deep:    #0A2E38;
+  --mid:     #12495E;
+  --soft:    #1A6B84;
+  --sage:    #5B9E8F;
+  --sage-lt: #9DCFBF;
+  --rose:    #C0624F;
+  --rose-lt: #D4897B;
+  --sand:    #F0EBE3;
+  --cream:   #FAFAF7;
+  --ink:     #1E1E1E;
+  --ink-mid: #3D3D3D;
+  --ink-lt:  #6E6E6E;
+  --rule:    #DDD7CE;
+  --white:   #FFFFFF;
+  --grad:    linear-gradient(135deg, var(--deep) 0%, var(--mid) 60%, var(--soft) 100%);
+  --radius:  8px;
+  --shadow:  0 2px 20px rgba(10,46,56,0.10);
+  --shadow-lg: 0 8px 48px rgba(10,46,56,0.18);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--sand);
+  color: var(--ink);
+  line-height: 1.65;
+  font-size: 15px;
+}
+
+/* ── SKIP TO MAIN (accessibility) ── */
+.skip-link {
+  position: absolute; left: -9999px; top: 8px; z-index: 9999;
+  background: var(--deep); color: var(--white);
+  padding: 8px 16px; border-radius: 4px; font-size: 0.85rem;
+  text-decoration: none;
+}
+.skip-link:focus { left: 8px; }
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--sand); }
+::-webkit-scrollbar-thumb { background: var(--sage); border-radius: 3px; }
+
+/* ── NAVIGATION ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0;
+  background: rgba(10,46,56,0.97);
+  backdrop-filter: blur(12px);
+  z-index: 1000;
+  padding: 0 32px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 60px;
+  border-bottom: 1px solid rgba(91,158,143,0.25);
+}
+
+.nav-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem; font-weight: 600;
+  color: var(--white); letter-spacing: 0.5px;
+}
+.nav-logo span { color: var(--rose-lt); }
+
+.nav-links {
+  display: flex; align-items: center; gap: 6px;
+  list-style: none;
+}
+.nav-links a {
+  color: var(--sage-lt); text-decoration: none;
+  font-size: 0.78rem; font-weight: 500; letter-spacing: 0.8px;
+  text-transform: uppercase; padding: 6px 12px; border-radius: 4px;
+  transition: all 0.2s;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--white); background: rgba(91,158,143,0.2); }
+.nav-links a:focus-visible { outline: 2px solid var(--sage-lt); outline-offset: 2px; }
+
+.nav-right { display: flex; align-items: center; gap: 10px; }
+
+.lang-toggle {
+  display: flex; align-items: center; gap: 6px;
+}
+.lang-btn {
+  background: none; border: 1px solid rgba(91,158,143,0.4);
+  color: var(--sage-lt); font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem; letter-spacing: 1px; padding: 5px 12px;
+  border-radius: 20px; cursor: pointer; transition: all 0.2s;
+}
+.lang-btn:hover, .lang-btn.active { background: var(--sage); border-color: var(--sage); color: var(--white); }
+.lang-btn:focus-visible { outline: 2px solid var(--sage-lt); outline-offset: 2px; }
+
+/* CV download button in nav */
+.nav-cv-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(192,98,79,0.15); border: 1px solid rgba(192,98,79,0.45);
+  color: var(--rose-lt); font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem; letter-spacing: 0.8px; padding: 5px 12px;
+  border-radius: 20px; cursor: pointer; transition: all 0.2s;
+  text-decoration: none; white-space: nowrap;
+}
+.nav-cv-btn:hover { background: var(--rose); border-color: var(--rose); color: var(--white); }
+.nav-cv-btn:focus-visible { outline: 2px solid var(--rose-lt); outline-offset: 2px; }
+.nav-cv-btn svg { flex-shrink: 0; }
+
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+.hamburger span { width: 22px; height: 2px; background: var(--sage-lt); border-radius: 1px; transition: all 0.3s; display: block; }
+.hamburger:focus-visible { outline: 2px solid var(--sage-lt); outline-offset: 2px; border-radius: 4px; }
+
+/* ── HERO ── */
+#hero {
+  background: var(--grad);
+  min-height: 100vh;
+  display: flex; align-items: center;
+  position: relative; overflow: hidden;
+  padding-top: 60px;
+}
+
+.hero-bg-pattern {
+  position: absolute; inset: 0; opacity: 0.04; pointer-events: none;
+  background-image:
+    radial-gradient(circle at 20% 80%, var(--sage) 1px, transparent 1px),
+    radial-gradient(circle at 80% 20%, var(--rose) 1px, transparent 1px),
+    radial-gradient(circle at 50% 50%, var(--white) 0.5px, transparent 0.5px);
+  background-size: 60px 60px, 40px 40px, 80px 80px;
+}
+
+.hero-wave {
+  position: absolute; bottom: -2px; left: 0; right: 0;
+}
+
+.hero-inner {
+  max-width: 1140px; margin: 0 auto; padding: 80px 32px;
+  display: grid; grid-template-columns: 1fr auto; gap: 60px;
+  align-items: center; position: relative; z-index: 1; width: 100%;
+}
+
+.hero-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem; letter-spacing: 3px; text-transform: uppercase;
+  color: var(--sage-lt); margin-bottom: 16px;
+  display: flex; align-items: center; gap: 10px;
+}
+.hero-eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--sage); }
+
+.hero-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3rem, 6vw, 4.8rem);
+  font-weight: 300; color: var(--white); line-height: 1.05;
+  margin-bottom: 4px;
+}
+.hero-name strong { font-weight: 700; color: var(--rose-lt); display: block; }
+
+.hero-title {
+  font-size: 0.95rem; color: var(--sage-lt); font-weight: 300;
+  letter-spacing: 0.3px; margin-bottom: 28px; line-height: 1.7;
+}
+
+.hero-interests {
+  display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 36px;
+}
+.interest-pill {
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(91,158,143,0.35);
+  color: var(--sage-lt); font-size: 0.78rem; padding: 5px 14px;
+  border-radius: 20px; font-family: 'Cormorant Garamond', serif;
+  font-style: italic; font-size: 0.9rem; letter-spacing: 0.2px;
+  transition: all 0.2s;
+}
+.interest-pill:hover { background: rgba(91,158,143,0.2); border-color: var(--sage); color: var(--white); }
+
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 36px; }
+
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 12px 24px; border-radius: 6px; text-decoration: none;
+  font-size: 0.85rem; font-weight: 500; letter-spacing: 0.3px;
+  transition: all 0.2s; cursor: pointer; border: none;
+}
+.btn:focus-visible { outline: 2px solid var(--sage-lt); outline-offset: 3px; }
+.btn-primary { background: var(--rose); color: var(--white); }
+.btn-primary:hover { background: var(--rose-lt); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(192,98,79,0.35); }
+.btn-outline { background: transparent; border: 1px solid rgba(91,158,143,0.5); color: var(--sage-lt); }
+.btn-outline:hover { background: rgba(91,158,143,0.15); border-color: var(--sage); color: var(--white); }
+/* Download CV button in hero */
+.btn-cv {
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(192,98,79,0.45);
+  color: var(--rose-lt);
+}
+.btn-cv:hover { background: var(--rose); border-color: var(--rose); color: var(--white); transform: translateY(-1px); }
+
+.hero-socials {
+  display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+}
+.social-link {
+  display: flex; align-items: center; gap: 8px;
+  color: var(--sage-lt); text-decoration: none; font-size: 0.78rem;
+  padding: 7px 12px; border-radius: 6px;
+  border: 1px solid rgba(91,158,143,0.25);
+  transition: all .25s ease;
+  font-family: 'JetBrains Mono', monospace; letter-spacing: .5px;
+}
+.social-link:hover { background: rgba(91,158,143,0.15); border-color: var(--sage); color: var(--white); transform: translateY(-2px); }
+.social-link:focus-visible { outline: 2px solid var(--sage-lt); outline-offset: 2px; }
+.social-link img { width: 20px; height: 20px; object-fit: contain; flex-shrink: 0; }
+
+/* PHOTO */
+.hero-photo-wrap {
+  display: flex; flex-direction: column; align-items: center; gap: 20px;
+}
+.hero-photo {
+  width: 220px; height: 260px; border-radius: 12px; overflow: hidden;
+  border: 3px solid rgba(91,158,143,0.4); box-shadow: 0 8px 40px rgba(0,0,0,0.35);
+  position: relative; background: var(--mid);
+}
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+.photo-placeholder {
+  width: 100%; height: 100%;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 12px; font-family: 'Cormorant Garamond', serif; color: var(--sage-lt);
+}
+.photo-placeholder svg { opacity: 0.4; }
+.photo-placeholder span { font-size: 0.75rem; opacity: 0.5; font-style: italic; }
+
+.hero-stats { display: flex; gap: 12px; }
+.stat-pill {
+  text-align: center; padding: 10px 14px;
+  background: rgba(255,255,255,0.07); border: 1px solid rgba(91,158,143,0.2);
+  border-radius: 8px; min-width: 60px;
+}
+.stat-num { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 700; color: var(--rose-lt); line-height: 1; }
+.stat-lbl { font-size: 0.65rem; color: var(--sage-lt); letter-spacing: 0.5px; margin-top: 2px; line-height: 1.3; }
+
+.scholar-stats { display: flex; gap: 10px; align-items: center; }
+.s-stat {
+  text-align: center;
+  background: rgba(183,211,220,0.08); border: 1px solid rgba(26,107,132,0.2);
+  border-radius: 6px; padding: 6px 12px;
+}
+.s-stat-num { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 700; color: var(--soft); line-height: 1; }
+.s-stat-lbl { font-size: 0.62rem; color: var(--sage-lt); letter-spacing: 0.5px; text-transform: uppercase; margin-top: 1px; }
+
+/* ── VISITOR COUNTER ── */
+#visitor-strip {
+  background: var(--deep); padding: 12px 32px;
+  display: flex; align-items: center; justify-content: center; gap: 24px;
+  font-family: 'JetBrains Mono', monospace; font-size: 0.72rem;
+  color: var(--sage-lt); flex-wrap: wrap;
+}
+.visitor-item { display: flex; align-items: center; gap: 7px; }
+.visitor-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--sage); animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+/* ── MAIN CONTENT ── */
+main { max-width: 1140px; margin: 0 auto; padding: 0 32px; }
+
+/* ── SECTION COMMON ── */
+.section { padding: 80px 0; border-bottom: 1px solid var(--rule); }
+.section:last-child { border-bottom: none; }
+
+.section-header { display: flex; align-items: center; gap: 16px; margin-bottom: 48px; }
+.section-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem; color: var(--rose); font-weight: 500;
+  letter-spacing: 1px; background: rgba(192,98,79,0.1);
+  padding: 4px 10px; border-radius: 4px; border: 1px solid rgba(192,98,79,0.25);
+}
+.section-title { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 600; color: var(--deep); }
+.section-rule { flex: 1; height: 1px; background: linear-gradient(90deg, var(--rule), transparent); }
+
+/* ── TIMELINE ── */
+.timeline { display: flex; flex-direction: column; }
+
+.tl-item {
+  display: grid; grid-template-columns: 120px 1fr;
+  gap: 0 32px; position: relative; padding-bottom: 36px;
+}
+.tl-item:last-child { padding-bottom: 0; }
+
+.tl-period {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem; color: var(--ink-lt); padding-top: 2px; text-align: right; line-height: 1.6;
+}
+.tl-body { padding-left: 28px; position: relative; }
+.tl-body::before {
+  content: ''; position: absolute; left: 0; top: 0; bottom: 0;
+  width: 2px; background: linear-gradient(to bottom, var(--sage), var(--rule));
+}
+.tl-body::after {
+  content: ''; position: absolute; left: -5px; top: 8px;
+  width: 12px; height: 12px; border-radius: 50%;
+  background: var(--rose); border: 3px solid var(--cream); box-shadow: 0 0 0 2px var(--rose);
+}
+.tl-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 600; color: var(--deep); line-height: 1.3; margin-bottom: 4px; }
+.tl-inst { font-size: 0.88rem; color: var(--ink-mid); font-style: italic; margin-bottom: 6px; }
+.tl-detail { font-size: 0.84rem; color: var(--ink-lt); line-height: 1.6; }
+.tl-detail em { color: var(--deep); font-style: normal; font-weight: 500; }
+
+/* ── PUBLICATIONS ── */
+.pub-toolbar {
+  display: flex; gap: 12px; margin-bottom: 28px;
+  flex-wrap: wrap; align-items: center; justify-content: space-between;
+}
+.pub-filters { display: flex; gap: 8px; flex-wrap: wrap; }
+.filter-btn {
+  background: none; border: 1px solid var(--rule); color: var(--ink-lt);
+  padding: 6px 16px; border-radius: 20px; font-size: 0.82rem;
+  cursor: pointer; transition: all 0.2s; font-family: 'Inter', sans-serif;
+}
+.filter-btn.active, .filter-btn:hover { background: var(--deep); border-color: var(--deep); color: var(--white); }
+.filter-btn:focus-visible { outline: 2px solid var(--deep); outline-offset: 2px; }
+
+.pub-list { display: flex; flex-direction: column; }
+
+.pub-item {
+  border-bottom: 1px solid rgba(221,215,206,0.5); transition: background 0.15s;
+}
+.pub-item:last-child { border-bottom: none; }
+
+.pub-header {
+  display: grid; grid-template-columns: 42px 1fr auto;
+  gap: 0 14px; padding: 18px 12px;
+  cursor: pointer; border-radius: 6px; transition: background 0.15s; align-items: start;
+}
+.pub-header:hover { background: rgba(240,235,227,0.7); }
+.pub-header:focus-visible { outline: 2px solid var(--sage); outline-offset: 2px; border-radius: 6px; }
+
+.pub-num { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--rose); font-weight: 500; padding-top: 3px; text-align: right; }
+.pub-title { font-style: italic; color: var(--deep); font-weight: 500; line-height: 1.5; }
+.pub-meta { font-size: 0.84rem; color: var(--ink-lt); margin-top: 4px; line-height: 1.5; }
+.pub-journal { color: var(--soft); font-weight: 500; }
+.pub-doi { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--ink-lt); }
+.pub-doi a { color: var(--sage); text-decoration: none; }
+.pub-doi a:hover { text-decoration: underline; }
+
+.pub-tag {
+  display: inline-block; font-size: 0.65rem; padding: 2px 8px; border-radius: 3px;
+  font-family: 'JetBrains Mono', monospace; letter-spacing: 0.5px; margin-left: 6px;
+  vertical-align: middle;
+}
+.tag-published { background: rgba(91,158,143,0.15); color: var(--sage); border: 1px solid rgba(91,158,143,0.3); }
+.tag-submitted { background: rgba(192,98,79,0.1); color: var(--rose); border: 1px solid rgba(192,98,79,0.25); }
+.tag-chapter { background: rgba(26,107,132,0.1); color: var(--soft); border: 1px solid rgba(26,107,132,0.25); }
+
+.pub-chevron { width: 20px; height: 20px; color: var(--ink-lt); transition: transform 0.3s; flex-shrink: 0; margin-top: 3px; }
+.pub-chevron.open { transform: rotate(180deg); }
+
+.pub-drawer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s ease; padding: 0 12px 0 68px; }
+.pub-drawer.open { max-height: 500px; padding: 0 12px 20px 68px; }
+
+.pub-abstract {
+  font-size: 0.84rem; color: var(--ink-mid); line-height: 1.75; margin-bottom: 14px;
+  font-style: italic; border-left: 3px solid var(--sage-lt); padding-left: 14px;
+}
+.pub-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.pub-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 0.78rem; padding: 5px 12px; border-radius: 4px;
+  text-decoration: none; transition: all 0.2s; font-weight: 500; border: 1px solid;
+}
+.pub-link:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+.pub-link-doi { color: var(--soft); border-color: rgba(26,107,132,0.35); background: rgba(26,107,132,0.06); }
+.pub-link-doi:hover { background: var(--soft); color: var(--white); border-color: var(--soft); }
+.pub-link-pdf { color: var(--rose); border-color: rgba(192,98,79,0.35); background: rgba(192,98,79,0.06); }
+.pub-link-pdf:hover { background: var(--rose); color: var(--white); border-color: var(--rose); }
+.pub-link-scholar { color: var(--sage); border-color: rgba(91,158,143,0.35); background: rgba(91,158,143,0.06); }
+.pub-link-scholar:hover { background: var(--sage); color: var(--white); border-color: var(--sage); }
+
+/* ── CONFERENCES ── */
+.conf-grid { display: flex; flex-direction: column; gap: 12px; }
+
+.conf-item {
+  display: flex; gap: 16px; padding: 16px 20px;
+  background: var(--cream); border: 1px solid var(--rule);
+  border-left: 3px solid var(--sage); border-radius: 0 var(--radius) var(--radius) 0;
+  transition: all 0.2s;
+}
+.conf-item:hover { border-left-color: var(--rose); box-shadow: var(--shadow); transform: translateX(3px); }
+
+.conf-badge { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--sage); font-weight: 500; min-width: 24px; padding-top: 2px; }
+.conf-title { font-weight: 600; color: var(--deep); margin-bottom: 2px; }
+.conf-event { font-size: 0.84rem; color: var(--rose); font-style: italic; }
+.conf-meta { font-size: 0.8rem; color: var(--ink-lt); }
+
+.stage-item {
+  display: flex; gap: 14px; padding: 14px 20px;
+  background: rgba(240,235,227,0.5); border: 1px solid var(--rule);
+  border-left: 3px solid var(--rose-lt); border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+/* ── TEACHING ── */
+.teaching-grid { display: flex; flex-direction: column; gap: 20px; }
+
+.teach-card {
+  background: var(--cream); border: 1px solid var(--rule);
+  border-radius: var(--radius); overflow: hidden;
+  box-shadow: var(--shadow); transition: all 0.2s;
+}
+.teach-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+
+.teach-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 24px; cursor: pointer; background: var(--cream);
+  border-bottom: 1px solid transparent; transition: all 0.2s;
+}
+.teach-header:hover { background: var(--sand); }
+.teach-header.open { border-bottom-color: var(--rule); }
+.teach-header:focus-visible { outline: 2px solid var(--sage); outline-offset: 2px; border-radius: var(--radius); }
+
+.teach-header-left { display: flex; align-items: center; gap: 16px; }
+.teach-period {
+  font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--ink-lt);
+  background: var(--sand); padding: 4px 10px; border-radius: 4px; white-space: nowrap;
+}
+.teach-inst { font-weight: 600; color: var(--deep); font-size: 1rem; }
+.teach-inst-full { font-size: 0.82rem; color: var(--ink-lt); font-style: italic; margin-top: 1px; }
+.teach-chevron { width: 20px; height: 20px; color: var(--ink-lt); transition: transform 0.3s; flex-shrink: 0; }
+.teach-chevron.open { transform: rotate(180deg); }
+
+.teach-body { padding: 0 24px; max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease; }
+.teach-body.open { max-height: 400px; padding: 20px 24px; }
+
+.course-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.course-chip {
+  background: var(--sand); border: 1px solid var(--rule);
+  color: var(--ink-mid); padding: 6px 14px; border-radius: 20px;
+  font-size: 0.83rem; display: flex; align-items: center; gap: 6px;
+}
+.course-chip .hours { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: var(--sage); background: rgba(91,158,143,0.1); padding: 1px 6px; border-radius: 3px; }
+.course-chip .level { font-size: 0.68rem; color: var(--rose); }
+
+/* ── SKILLS ── */
+.skills-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+.skill-card { background: var(--cream); border: 1px solid var(--rule); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); }
+.skill-card-title { font-size: 0.72rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--deep); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid var(--rose-lt); }
+.skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.skill-tag { background: var(--sand); border: 1px solid var(--rule); color: var(--ink-mid); padding: 5px 12px; border-radius: 4px; font-size: 0.84rem; }
+
+.lang-item { margin-bottom: 12px; }
+.lang-name { font-size: 0.88rem; color: var(--ink-mid); margin-bottom: 5px; display: flex; justify-content: space-between; }
+.lang-level { font-size: 0.72rem; color: var(--ink-lt); }
+.lang-bar-track { height: 4px; background: var(--sand); border-radius: 2px; overflow: hidden; }
+.lang-bar-fill { height: 100%; border-radius: 2px; background: linear-gradient(90deg, var(--sage), var(--soft)); transition: width 1s ease; }
+
+/* ── COLLABORATORS ── */
+.collab-section {
+  background: linear-gradient(135deg, var(--deep), var(--mid));
+  border-radius: 12px; padding: 48px; margin-top: 40px;
+  position: relative; overflow: hidden;
+}
+.collab-section::before {
+  content: ''; position: absolute; top: -40%; right: -10%;
+  width: 350px; height: 350px; border-radius: 50%;
+  background: rgba(91,158,143,0.08); pointer-events: none;
+}
+.collab-title { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; color: var(--white); margin-bottom: 8px; }
+.collab-subtitle { font-size: 0.88rem; color: var(--sage-lt); margin-bottom: 32px; }
+.collab-grid { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 36px; }
+.collab-card {
+  background: rgba(255,255,255,0.07); border: 1px solid rgba(91,158,143,0.25);
+  border-radius: 8px; padding: 14px 20px; display: flex; align-items: center; gap: 12px;
+  transition: all 0.2s;
+}
+.collab-card:hover { background: rgba(255,255,255,0.12); border-color: var(--sage); }
+.collab-avatar {
+  width: 38px; height: 38px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--sage), var(--soft));
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Cormorant Garamond', serif; font-weight: 700;
+  color: var(--white); font-size: 0.95rem; flex-shrink: 0;
+}
+.collab-name { font-weight: 500; color: var(--white); font-size: 0.9rem; }
+.collab-inst { font-size: 0.76rem; color: var(--sage-lt); }
+.open-collab { border-top: 1px solid rgba(91,158,143,0.2); padding-top: 28px; }
+.open-collab-title { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--rose-lt); margin-bottom: 12px; }
+.open-topics { display: flex; flex-wrap: wrap; gap: 8px; }
+.open-topic { background: rgba(255,255,255,0.06); border: 1px solid rgba(91,158,143,0.25); color: var(--sage-lt); padding: 6px 14px; border-radius: 20px; font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; font-style: italic; }
+
+/* ── CERTIFICATIONS ── */
+.card-list { display: flex; flex-direction: column; gap: 10px; }
+.small-card { display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px; background: var(--cream); border: 1px solid var(--rule); border-radius: var(--radius); }
+.small-card-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 6px; }
+.small-card-title { font-weight: 500; color: var(--deep); font-size: 0.9rem; }
+.small-card-sub { font-size: 0.78rem; color: var(--ink-lt); margin-top: 2px; line-height: 1.5; }
+.ptag { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: var(--ink-lt); background: var(--sand); padding: 2px 7px; border-radius: 3px; margin-left: 6px; display: inline-block; }
+
+/* ── EDITORIAL ACTIVITIES ── */
+.editorial-section { margin-top: 40px; }
+.editorial-title { font-size: 0.78rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--deep); margin-bottom: 16px; }
+.editorial-list { display: flex; flex-direction: column; gap: 12px; }
+
+.ed-card { background: var(--cream); border: 1px solid var(--rule); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: all 0.2s; }
+.ed-card:hover { box-shadow: var(--shadow-lg); }
+
+.ed-header { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; cursor: pointer; transition: background 0.15s; }
+.ed-header:hover { background: var(--sand); }
+.ed-header.open { border-bottom: 1px solid var(--rule); }
+.ed-header:focus-visible { outline: 2px solid var(--sage); outline-offset: 2px; border-radius: var(--radius); }
+
+.ed-header-left { display: flex; align-items: center; gap: 14px; }
+.ed-role-badge { font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; padding: 3px 10px; border-radius: 20px; white-space: nowrap; font-weight: 600; letter-spacing: 0.5px; }
+.role-editor { background: rgba(91,158,143,0.15); color: var(--sage); border: 1px solid rgba(91,158,143,0.3); }
+.role-reviewer { background: rgba(192,98,79,0.1); color: var(--rose); border: 1px solid rgba(192,98,79,0.25); }
+
+.ed-journal-name { font-weight: 600; color: var(--deep); font-size: 0.92rem; }
+.ed-years { font-size: 0.78rem; color: var(--ink-lt); margin-top: 1px; }
+.ed-chevron { width: 18px; height: 18px; color: var(--ink-lt); transition: transform 0.3s; }
+.ed-chevron.open { transform: rotate(180deg); }
+
+.ed-body { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease; padding: 0 20px; }
+.ed-body.open { max-height: 300px; padding: 16px 20px; }
+
+.ed-info-grid { display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; align-items: center; }
+.ed-info-label { font-size: 0.72rem; color: var(--ink-lt); font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; white-space: nowrap; }
+.ed-info-val { font-size: 0.84rem; color: var(--ink-mid); }
+.ed-info-val a { color: var(--soft); text-decoration: none; }
+.ed-info-val a:hover { text-decoration: underline; }
+
+.q-badge { display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; padding: 2px 8px; border-radius: 3px; font-weight: 700; letter-spacing: 0.5px; }
+.q1 { background: rgba(91,158,143,0.18); color: #2f7d6f; border: 1px solid rgba(91,158,143,0.35); }
+.q2 { background: rgba(224,193,87,0.15); color: #9c7a00; border: 1px solid rgba(224,193,87,0.35); }
+.q3 { background: rgba(192,98,79,0.12); color: #b35342; border: 1px solid rgba(192,98,79,0.30); }
+.q4 { background: rgba(180,60,60,0.12); color: #a63a3a; border: 1px solid rgba(180,60,60,0.30); }
+
+/* ── CV DOWNLOAD SECTION (hero-area) ── */
+.cv-download-group {
+  display: flex; gap: 10px; flex-wrap: wrap; margin-top: 4px;
+}
+
+/* ── FOOTER ── */
+footer { background: var(--deep); padding: 40px 32px; text-align: center; }
+.footer-inner { max-width: 1140px; margin: 0 auto; }
+.footer-name { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--white); margin-bottom: 8px; }
+.footer-sub { font-size: 0.82rem; color: var(--sage-lt); margin-bottom: 20px; }
+.footer-line { font-size: 0.72rem; color: var(--ink-lt); font-family: 'JetBrains Mono', monospace; }
+
+/* ── BACK TO TOP ── */
+#back-top {
+  position: fixed; bottom: 24px; right: 24px;
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--deep); color: var(--white);
+  border: 1px solid rgba(91,158,143,0.4);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; opacity: 0; pointer-events: none;
+  transition: all 0.3s; box-shadow: var(--shadow); z-index: 999;
+}
+#back-top.visible { opacity: 1; pointer-events: all; }
+#back-top:hover { background: var(--mid); transform: translateY(-2px); }
+#back-top:focus-visible { outline: 2px solid var(--sage-lt); outline-offset: 3px; }
+
+/* ── FADE IN ── */
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.fade-in.visible { opacity: 1; transform: none; }
+
+/* ── REDUCED MOTION ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  .fade-in { opacity: 1; transform: none; }
+}
+
+/* ── TABLET ── */
+@media (max-width: 768px) {
+  nav { padding: 0 16px; }
+  .nav-links { display: none; flex-direction: column; position: absolute; top: 60px; left: 0; right: 0; background: rgba(10,46,56,0.98); padding: 16px; gap: 4px; z-index: 999; }
+  .nav-links.open { display: flex; }
+  .hamburger { display: flex; }
+  .nav-cv-btn span.cv-label { display: none; }
+  .hero-inner { grid-template-columns: 1fr; gap: 40px; padding: 40px 16px 60px; }
+  .hero-photo-wrap { order: -1; }
+  .hero-photo { width: 160px; height: 190px; }
+  main { padding: 0 16px; }
+  .section { padding: 48px 0; }
+  .skills-grid { grid-template-columns: 1fr; }
+  .tl-item { grid-template-columns: 80px 1fr; gap: 0 16px; }
+  .collab-section { padding: 28px 16px; margin: 32px -16px 0 -16px; border-radius: 0; }
+  footer { padding: 32px 16px; }
+}
+
+/* ── MOBILE ── */
+@media (max-width: 480px) {
+  nav { padding: 0 12px; height: 56px; }
+  .nav-logo { font-size: 1rem; }
+  .lang-toggle { gap: 4px; }
+  .lang-btn { font-size: 0.65rem; padding: 4px 8px; }
+  #hero { min-height: 90vh; }
+  .hero-inner { padding: 32px 12px 48px; }
+  .hero-name { font-size: 2.2rem; }
+  .hero-actions { flex-direction: column; }
+  .hero-photo { width: 140px; height: 160px; }
+  main { padding: 0 12px; }
+  .section { padding: 36px 0; }
+  .section-title { font-size: 1.4rem; }
+  .skills-grid { grid-template-columns: 1fr; gap: 16px; }
+  .tl-item { grid-template-columns: 1fr; }
+  .tl-period { text-align: left; padding-bottom: 4px; }
+  .tl-body { padding-left: 0; }
+  .collab-section { padding: 20px 12px; }
+  footer { padding: 24px 12px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Skip to main content (accessibility) -->
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- ── NAVIGATION ── -->
+<nav role="navigation" aria-label="Main navigation">
+  <div class="nav-logo" aria-label="Imen Ferjani — Home">Imen <span>Ferjani</span></div>
+  <ul class="nav-links" id="navLinks" role="menubar">
+    <li role="none"><a href="#about" data-i18n="nav_about" role="menuitem">About</a></li>
+    <li role="none"><a href="#education" data-i18n="nav_edu" role="menuitem">Education</a></li>
+    <li role="none"><a href="#positions" data-i18n="nav_pos" role="menuitem">Positions</a></li>
+    <li role="none"><a href="#publications" data-i18n="nav_pub" role="menuitem">Publications</a></li>
+    <li role="none"><a href="#conferences" data-i18n="nav_conf" role="menuitem">Conferences</a></li>
+    <li role="none"><a href="#teaching" data-i18n="nav_teach" role="menuitem">Teaching</a></li>
+    <li role="none"><a href="#skills" data-i18n="nav_skills" role="menuitem">Skills</a></li>
+    <li role="none"><a href="#collaborators" data-i18n="nav_ref" role="menuitem">Collaborators</a></li>
+  </ul>
+  <div class="nav-right">
+    <!-- CV Download — switches with language -->
+    <a id="navCvBtn" href="./cv/cv_fr.pdf" target="_blank" rel="noopener noreferrer" class="nav-cv-btn" aria-label="View CV in English">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      <span class="cv-label" data-i18n="nav_cv">CV PDF</span>
+    </a>
+    <div class="lang-toggle" role="group" aria-label="Language selector">
+      <button class="lang-btn active" id="btnEN" onclick="setLang('en')" aria-pressed="true" lang="en">EN</button>
+      <button class="lang-btn" id="btnFR" onclick="setLang('fr')" aria-pressed="false" lang="fr">FR</button>
+    </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="about" aria-label="About Imen Ferjani">
+  <div id="hero">
+    <div class="hero-bg-pattern" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-eyebrow" data-i18n="hero_eyebrow">Doctor of Mathematics · Operator Theory</div>
+        <h1 class="hero-name">Imen <strong>FERJANI</strong></h1>
+        <p class="hero-title" data-i18n="hero_title">
+          Researcher · University of Sfax<br>
+          Laboratory of Physics-Mathematics, Faculty of Sciences of Sfax
+        </p>
+
+        <div class="hero-interests" role="list" aria-label="Research interests">
+          <span class="interest-pill" role="listitem" data-i18n="int1">Probability &amp; Statistics</span>
+          <span class="interest-pill" role="listitem" data-i18n="int2">Functional Analysis</span>
+          <span class="interest-pill" role="listitem" data-i18n="int3">Operator Theory</span>
+          <span class="interest-pill" role="listitem" data-i18n="int4">Spectral Analysis</span>
+          <span class="interest-pill" role="listitem" data-i18n="int5">Linear Algebra</span>
+          <span class="interest-pill" role="listitem" data-i18n="int6">Numerical Analysis</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#publications" class="btn btn-primary" data-i18n="btn_pubs">View Publications</a>
+          <a href="mailto:imenoferjani@yahoo.fr" class="btn btn-outline" data-i18n="btn_contact">Contact</a>
+          <!-- CV Download buttons — toggle with language -->
+          <!-- <a id="cvBtnEn" href="./cv/cv_en.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-cv" aria-label="View CV in English">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span data-i18n="btn_cv_en">CV (English)</span>
+          </a>
+          <a id="cvBtnFr" href="./cv/cv_fr.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-cv" style="display:none;" aria-label="Voir le CV en français">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span data-i18n="btn_cv_fr">CV (Français)</span>
+          </a> -->
+        </div>
+
+        <div class="hero-socials" role="list" aria-label="Academic profiles">
+          <a href="https://www.researchgate.net/profile/Imen-Ferjani" target="_blank" rel="noopener noreferrer" class="social-link" role="listitem" aria-label="ResearchGate profile">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/ResearchGate_icon_SVG.svg" alt="" aria-hidden="true" width="20" height="20">ResearchGate
+          </a>
+          <a href="https://www.linkedin.com/in/imen-ferjani/" target="_blank" rel="noopener noreferrer" class="social-link" role="listitem" aria-label="LinkedIn profile">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="" aria-hidden="true" width="20" height="20">LinkedIn
+          </a>
+          <a href="https://scholar.google.com/citations?user=QKMAQkEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="social-link" role="listitem" aria-label="Google Scholar profile">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="" aria-hidden="true" width="20" height="20">Scholar
+          </a>
+          <a href="https://orcid.org/0000-0003-1482-4804" target="_blank" rel="noopener noreferrer" class="social-link" role="listitem" aria-label="ORCID profile 0000-0003-1482-4804">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" alt="" aria-hidden="true" width="20" height="20">ORCID
+          </a>
+          <a href="https://www.scopus.com/authid/detail.uri?authorId=57206938166" target="_blank" rel="noopener noreferrer" class="social-link" role="listitem" aria-label="Scopus author profile">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Scopus_logo.svg" alt="" aria-hidden="true" width="20" height="20">Scopus
+          </a>
+          <a href="https://mathscinet.ams.org/mathscinet/MRAuthorID/1309981" target="_blank" rel="noopener noreferrer" class="social-link" role="listitem" aria-label="MathSciNet profile">
+            <img src="https://www.mfo.de/library/logos/logo-1531237808.png" alt="" aria-hidden="true" width="20" height="20">MathSciNet
+          </a>
+          <a href="https://www.webofscience.com/wos/author/record/MCX-9072-2025" target="_blank" rel="noopener noreferrer" class="social-link" role="listitem" aria-label="Web of Science profile — Researcher ID MCX-9072-2025">
+            <img src="https://libapps-au.s3-ap-southeast-2.amazonaws.com/accounts/43618/images/WEb_of_Science_logo._SG._2022.jpg" alt="" aria-hidden="true" width="20" height="20">WoS
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap">
+        <div class="hero-photo">
+          <img src="photo_cv.png" alt="Dr. Imen Ferjani — Mathematician"
+               onerror="this.parentNode.innerHTML='<div class=\'photo-placeholder\'><svg width=\'60\' height=\'60\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1\'><circle cx=\'12\' cy=\'8\' r=\'4\'/><path d=\'M4 20c0-4 3.6-7 8-7s8 3 8 7\'/></svg><span>photo_cv.png</span></div>'">
+        </div>
+        <div class="hero-stats" aria-label="Research statistics">
+          <div class="stat-pill"><div class="stat-num">12</div><div class="stat-lbl" data-i18n="stat_pub">Articles<br>Published</div></div>
+          <div class="stat-pill"><div class="stat-num">2+</div><div class="stat-lbl" data-i18n="stat_sub">Submitted /<br>In Progress</div></div>
+          <div class="stat-pill"><div class="stat-num">6+</div><div class="stat-lbl" data-i18n="stat_conf">Conf.<br>Presented</div></div>
+        </div>
+        <a href="https://scholar.google.com/citations?user=QKMAQkEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"
+           style="display:flex;gap:10px;text-decoration:none;" aria-label="View citation stats on Google Scholar"
+           class="scholar-stats">
+          <div class="s-stat"><div class="stat-num">38</div><div class="s-stat-lbl" data-i18n="stat_citations">Citations</div></div>
+          <div class="s-stat"><div class="stat-num">4</div><div class="s-stat-lbl">h-index</div></div>
+          <div class="s-stat"><div class="stat-num">1</div><div class="s-stat-lbl">i10-index</div></div>
+        </a>
+      </div>
+    </div>
+
+    <svg class="hero-wave" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,40 C360,80 1080,0 1440,40 L1440,60 L0,60 Z" fill="#F0EBE3"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ── VISITOR COUNTER ── -->
+<div id="visitor-strip" role="status" aria-live="polite">
+  <div class="visitor-item">
+    <div class="visitor-dot" aria-hidden="true"></div>
+    <span id="visitor-text">Welcome to my website!</span>
+  </div>
+  <!-- <div class="visitor-item">
+    <span id="visitor-num-text"></span>
+  </div> --> 
+</div>
+
+<!-- ── MAIN ── -->
+<main id="main-content" tabindex="-1">
+
+  <!-- EDUCATION -->
+  <section id="education" class="section fade-in" aria-labelledby="edu-heading">
+    <div class="section-header">
+      <span class="section-num" aria-hidden="true">01</span>
+      <h2 class="section-title" id="edu-heading" data-i18n="sec_edu">Academic Background</h2>
+      <div class="section-rule" aria-hidden="true"></div>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-period">2017 – 2020</div>
+        <div class="tl-body">
+          <div class="tl-title" data-i18n="edu1_title">PhD in Mathematics</div>
+          <div class="tl-inst" data-i18n="edu1_inst">Faculty of Sciences of Sfax (FSS) — University of Sfax</div>
+          <div class="tl-detail">
+            <em data-i18n="lbl_subject">Subject:</em> <span data-i18n="edu1_subj">Generalized weakly demicompact operators</span><br>
+            <em data-i18n="lbl_dir">Supervisor:</em> Prof. Bilel Krichen<br>
+            <em data-i18n="lbl_rep">Reviewers:</em> Prof. El Hassan Zerouali &amp; Prof. Mohamed Ali Hammami
+          </div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-period">2012 – 2014</div>
+        <div class="tl-body">
+          <div class="tl-title" data-i18n="edu2_title">M.Sc. Research in Mathematics</div>
+          <div class="tl-inst" data-i18n="edu2_inst">Faculty of Sciences of Monastir — University of Monastir</div>
+          <div class="tl-detail">
+            <em data-i18n="lbl_title">Title:</em> <span data-i18n="edu2_subj">Multifractal analysis of branching random walks in ℝ<sup>d</sup></span><br>
+            <em data-i18n="lbl_dir">Supervisor:</em> Prof. Imen Bhouri
+          </div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-period">2008 – 2011</div>
+        <div class="tl-body">
+          <div class="tl-title" data-i18n="edu3_title">B.Sc. in Mathematics</div>
+          <div class="tl-inst" data-i18n="edu3_inst">Faculty of Sciences of Monastir — University of Monastir</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-period">2006 – 2007</div>
+        <div class="tl-body">
+          <div class="tl-title" data-i18n="edu4_title">Baccalaureate in Mathematics</div>
+          <div class="tl-inst">Tunisia</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POSITIONS -->
+  <section id="positions" class="section fade-in" aria-labelledby="pos-heading">
+    <div class="section-header">
+      <span class="section-num" aria-hidden="true">02</span>
+      <h2 class="section-title" id="pos-heading" data-i18n="sec_pos">Professional Experience</h2>
+      <div class="section-rule" aria-hidden="true"></div>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-period">2025 – 2026</div>
+        <div class="tl-body">
+          <div class="tl-title" data-i18n="pos1_title">Contract Assistant Professor</div>
+          <div class="tl-inst" data-i18n="pos6_inst">Higher Institute of Medical Technologies of Tunis (ISTMT) — University of Tunis El Manar</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-period">2024 – 2025</div>
+        <div class="tl-body">
+          <div class="tl-title" data-i18n="pos2_title">Part-time Teacher</div>
+          <div class="tl-inst" data-i18n="pos3_inst">Private School of Engineering and Technology (ESPRIT)</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-period">2023 – 2024</div>
+        <div class="tl-body">
+          <div class="tl-title" data-i18n="pos2_title">Part-time Teacher</div>
+          <div class="tl-inst" data-i18n="pos5_inst">Private Higher School of Technology and Engineering (TEK-UP)</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-period">2021 – 2023</div>
+        <div class="tl-body">
+          <div class="tl-title" data-i18n="pos1_title">Contract Assistant Professor</div>
+          <div class="tl-inst" data-i18n="pos4_inst">National Engineering School of Tunis (ENIT) — University of Tunis El Manar</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-period">2020 – 2021</div>
+        <div class="tl-body">
+          <div class="tl-title" data-i18n="pos1_title">Contract Assistant Professor</div>
+          <div class="tl-inst" data-i18n="pos2_inst">Higher Institute of Informatics and Mathematics of Monastir (ISIMM) — University of Monastir</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-period">2019 – 2020</div>
+        <div class="tl-body">
+          <div class="tl-title" data-i18n="pos2_title">Part-time Teacher</div>
+          <div class="tl-inst" data-i18n="pos1_inst">Faculty of Sciences of Sfax (FSS) — University of Sfax</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications" class="section fade-in" aria-labelledby="pub-heading">
+    <div class="section-header">
+      <span class="section-num" aria-hidden="true">03</span>
+      <h2 class="section-title" id="pub-heading" data-i18n="sec_pub">Publications</h2>
+      <div class="section-rule" aria-hidden="true"></div>
+    </div>
+
+    <div class="pub-toolbar">
+      <div class="pub-filters" role="group" aria-label="Filter publications">
+        <button class="filter-btn active" onclick="filterPubs('all', this)" data-i18n="filter_all">All (14)</button>
+        <button class="filter-btn" onclick="filterPubs('published', this)" data-i18n="filter_pub">Published (12)</button>
+        <button class="filter-btn" onclick="filterPubs('submitted', this)" data-i18n="filter_sub">Submitted / In Progress (2)</button>
+      </div>
+      <a href="https://scholar.google.com/citations?user=QKMAQkEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"
+         style="display:flex;gap:10px;text-decoration:none;" aria-label="View citation stats on Google Scholar"
+         class="scholar-stats">
+        <div class="s-stat"><div class="s-stat-num">38</div><div class="s-stat-lbl" data-i18n="stat_citations"><strong>Citations</strong></div></div>
+        <div class="s-stat"><div class="s-stat-num">4</div><div class="s-stat-lbl"><strong>h-index</strong></div></div>
+        <div class="s-stat"><div class="s-stat-num">1</div><div class="s-stat-lbl"><strong>i10-index</strong></div></div>
+      </a>
+    </div>
+
+    <div class="pub-list" id="pubList" role="list" aria-label="Publication list">
+
+      <!-- 12 -->
+      <article class="pub-item" data-type="published" role="listitem">
+        <div class="pub-header" onclick="togglePub(this)" aria-expanded="false" role="button" tabindex="0">
+          <span class="pub-num" aria-label="Publication 12">12.</span>
+          <div class="pub-main">
+            <div class="pub-title">On left-right <em>γ̄-ε</em>-condition pseudospectrum <span class="pub-tag tag-published">Published</span></div>
+            <div class="pub-meta">I. Ferjani, M. Beghdadi &amp; B. Krichen · <span class="pub-journal">Kragujevac Journal of Mathematics</span>, 51(5):887–899, 2027</div>
+          </div>
+          <svg class="pub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="pub-drawer" aria-hidden="true">
+          <p class="pub-abstract">In this paper, we introduce new pseudo-spectral sets called the left (right) <span style="text-decoration:overline;">γ</span>-pseudospectrum and left (right) <span style="text-decoration:overline;">γ</span>-ε-condition pseudospectrum of bounded linear operators on Banach spaces. We provide a sufficient condition for invertibility using the Kuratowski measure of noncompactness, and establish characterizations of these new spectral sets.</p>
+          <div class="pub-actions">
+            <a href="./papers/published/paper12.pdf" target="_blank" class="pub-link pub-link-pdf" aria-label="Download PDF of publication 12">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>PDF
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 11 -->
+      <article class="pub-item" data-type="published" role="listitem">
+        <div class="pub-header" onclick="togglePub(this)" aria-expanded="false" role="button" tabindex="0">
+          <span class="pub-num" aria-label="Publication 11">11.</span>
+          <div class="pub-main">
+            <div class="pub-title">Characterization and numerical simulations of relative generalized weak demicompact operators <span class="pub-tag tag-published">Published</span></div>
+            <div class="pub-meta">I. Ferjani · <span class="pub-journal">Computational and Applied Mathematics</span>, 484:117462, 2026</div>
+            <div class="pub-doi">DOI: <a href="https://doi.org/10.1016/j.cam.2026.117462" target="_blank" rel="noopener noreferrer">10.1016/j.cam.2026.117462</a></div>
+          </div>
+          <svg class="pub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="pub-drawer" aria-hidden="true">
+          <p class="pub-abstract">Study of relatively generalized weakly demicompact (GWMD) operators on Banach spaces. New characterizations via De Blasi measure of noncompactness, stability under perturbations, analysis of 2×2 block operator matrices, and numerical experiments on weighted-shift and Volterra-type operators.</p>
+          <div class="pub-actions">
+            <a href="https://doi.org/10.1016/j.cam.2026.117462" target="_blank" rel="noopener noreferrer" class="pub-link pub-link-doi" aria-label="View DOI for publication 11"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>DOI</a>
+            <a href="https://scholar.google.com/scholar?q=relative+generalized+weak+demicompact+operators+Ferjani+2026" target="_blank" rel="noopener noreferrer" class="pub-link pub-link-scholar" aria-label="Search Google Scholar for publication 11"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Scholar</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 10 -->
+      <article class="pub-item" data-type="published" role="listitem">
+        <div class="pub-header" onclick="togglePub(this)" aria-expanded="false" role="button" tabindex="0">
+          <span class="pub-num" aria-label="Publication 10">10.</span>
+          <div class="pub-main">
+            <div class="pub-title">On the Class of <em>p</em>-<em>M</em>-Weakly Demicompact Operators with Numerical Application <span class="pub-tag tag-published">Published</span></div>
+            <div class="pub-meta">I. Ferjani · <span class="pub-journal">Bol. Soc. Paran. Mat.</span>, 43(5):1–15, 2026</div>
+            <div class="pub-doi">DOI: <a href="https://periodicos.uem.br/ojs/index.php/BSocParanMat/article/view/78937" target="_blank" rel="noopener noreferrer">10.5269/bspm.78937</a></div>
+          </div>
+          <svg class="pub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="pub-drawer" aria-hidden="true">
+          <p class="pub-abstract">Introduction of p-M-weakly demicompact operators (PMWD) within lattice-normed vector lattices, generalizing weak compactness and demicompactness. Relationships with p-compact and p-M-weakly compact operators, stability under perturbations, and a numerical application to hidden state stability in neural networks.</p>
+          <div class="pub-actions">
+            <a href="https://periodicos.uem.br/ojs/index.php/BSocParanMat/article/view/78937" target="_blank" rel="noopener noreferrer" class="pub-link pub-link-doi" aria-label="View DOI for publication 10"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>DOI</a>
+            <a href="./papers/published/paper10.pdf" target="_blank" class="pub-link pub-link-pdf" aria-label="Download PDF of publication 10"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>PDF</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 9 -->
+      <article class="pub-item" data-type="published" role="listitem">
+        <div class="pub-header" onclick="togglePub(this)" aria-expanded="false" role="button" tabindex="0">
+          <span class="pub-num" aria-label="Publication 9">9.</span>
+          <div class="pub-main">
+            <div class="pub-title">Generalized weak demicompactness via perturbation and coperturbation functions <span class="pub-tag tag-published">Published</span></div>
+            <div class="pub-meta">I. Ferjani · <span class="pub-journal">Advanced Studies Euro-Tbilisi Mathematical Journal</span>, 18(1):111–120, 2025</div>
+            <div class="pub-doi">DOI: <a href="https://doi.org/10.32513/asetmj/1932200825007" target="_blank" rel="noopener noreferrer">10.32513/asetmj/1932200825007</a></div>
+          </div>
+          <svg class="pub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="pub-drawer" aria-hidden="true">
+          <p class="pub-abstract">Stability of generalized weakly demicompact operators on Banach spaces under strictly singular and cosingular perturbations, via the notions of perturbation and coperturbation functions. Results applied to establish invariance of the essential spectrum.</p>
+          <div class="pub-actions">
+            <a href="https://doi.org/10.32513/asetmj/1932200825007" target="_blank" rel="noopener noreferrer" class="pub-link pub-link-doi"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>DOI</a>
+            <a href="https://scholar.google.com/scholar?q=Generalized+weak+demicompactness+perturbation+coperturbation+Ferjani+2025" target="_blank" rel="noopener noreferrer" class="pub-link pub-link-scholar"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Scholar</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="pub-item" data-type="published" role="listitem">
+        <div class="pub-header" onclick="togglePub(this)" aria-expanded="false" role="button" tabindex="0">
+          <span class="pub-num" aria-label="Publication 8">8.</span>
+          <div class="pub-main">
+            <div class="pub-title">Generalized essential spectra involving the class of <em>g</em>-<em>g</em>-Riesz operators <span class="pub-tag tag-published">Published</span></div>
+            <div class="pub-meta">I. Ferjani, O. Kchaou &amp; B. Krichen · <span class="pub-journal">Georgian Mathematical Journal</span>, 2024</div>
+            <div class="pub-doi">DOI: <a href="https://doi.org/10.1515/gmj-2024-2002" target="_blank" rel="noopener noreferrer">10.1515/gmj-2024-2002</a></div>
+          </div>
+          <svg class="pub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="pub-drawer" aria-hidden="true">
+          <p class="pub-abstract">Spectral properties of unbounded generalized Fredholm operators on non-reflexive Banach spaces. Introduction of g-g-Riesz linear operators as an extension of Riesz operators, with applications to generalized essential spectra and perturbation results.</p>
+          <div class="pub-actions">
+            <a href="https://doi.org/10.1515/gmj-2024-2002" target="_blank" rel="noopener noreferrer" class="pub-link pub-link-doi"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>DOI</a>
+            <a href="./papers/published/paper08.pdf" target="_blank" class="pub-link pub-link-pdf"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>PDF</a>
+            <a href="https://scholar.google.com/scholar?q=Generalized+essential+spectra+g-g-Riesz+operators+Ferjani+2024" target="_blank" rel="noopener noreferrer" class="pub-link pub-link-scholar"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Scholar</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="pub-item" data-type="published" role="listitem">
+        <div class="pub-header" onclick="togglePub(this)" aria-expanded="false" role="button" tabindex="0">
+          <span class="pub-num" aria-label="Publication 7">7.</span>
+          <div class="pub-main">
+            <div class="pub-title">The class of <em>p</em>-demicompact operators on lattice normed spaces <span class="pub-tag tag-published">Published</span></div>
+            <div class="pub-meta">I. Ferjani &amp; B. Krichen · <span class="pub-journal">Commun. Korean Math. Soc.</span>, 39(1):137–147, 2024</div>
+            <div class="pub-doi">DOI: <a href="https://doi.org/10.4134/CKMS.c230116" target="_blank" rel="noopener noreferrer">10.4134/CKMS.c230116</a></div>
+          </div>
+          <svg class="pub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="pub-drawer" aria-hidden="true">
+          <p class="pub-abstract">Introduction of p-demicompact operators between lattice normed spaces, with conditions under which p-bounded operators are p-demicompact, and a study of the modulus of p-demicompact operators.</p>
+          <div class="pub-actions">
+            <a href="https://doi.org/10.4134/CKMS.c230116" target="_blank" rel="noopener noreferrer" class="pub-link pub-link-doi"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>DOI</a>
+            <a href="./papers/published/paper07.pdf" target="_blank" class="pub-link pub-link-pdf"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>PDF</a>
+            <a href="https://scholar.google.com/scholar?q=p-demicompact+operators+lattice+normed+spaces+Ferjani+Krichen+2024" target="_blank" rel="noopener noreferrer" class="pub-link pub-link-scholar"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Scholar</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="pub-item" data-type="published" role="listitem">
+        <div class="pub-header" onclick="togglePub(this)" aria-expanded="false" role="button" tabindex="0">
+          <span class="pub-num" aria-label="Publication 6">6.</span>
+          <div class="pub-main">
+            <div class="pub-title">Index for generalized Fredholm operators and generalized perturbation theory <span class="pub-tag tag-published">Published</span></div>
+            <div class="pub-meta">R. Aydi, I. Ferjani &amp; B. Krichen · <span class="pub-journal">Georgian Mathematical Journal</span>, 30(4):493–507, 2023</div>
+            <div class="pub-doi">DOI: <a href="https://doi.org/10.1515/gmj-2023-2021" target="_blank" rel="noopener noreferrer">10.1515/gmj-2023-2021</a></div>
+          </div>
+          <svg class="pub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="pub-drawer" aria-hidden="true">
+          <p class="pub-abstract">Index theory for generalized Fredholm operators extending classical Fredholm index theory. Perturbation results and index stability under compact and generalized perturbations.</p>
+          <div class="pub-actions">
+            <a href="https://doi.org/10.1515/gmj-2023-2021" target="_blank" rel="noopener noreferrer" class="pub-link pub-link-doi"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>DOI</a>
+            <a href="./papers/published/paper06.pdf" target="_blank" class="pub-link pub-link-pdf"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>PDF</a>
+            <a href="https://scholar.google.com/scholar?q=Index+generalized+Fredholm+operators+perturbation+Aydi+Ferjani+Krichen+2023" target="_blank" rel="noopener noreferrer" class="pub-link pub-link-scholar"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Scholar</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="pub-item" data-type="published" role="listitem">
+        <div class="pub-header" onclick="togglePub(this)" aria-expanded="false" role="button" tabindex="0">
+          <span class="pub-num" aria-label="Publication 5">5.</span>
+          <div class="pub-main">
+            <div class="pub-title">Generalized weak demicompactness involving measure of non-strict-singularity <span class="pub-tag tag-published">Published</span></div>
+            <div class="pub-meta">I. Ferjani, A. Jeribi &amp; B. Krichen · <span class="pub-journal">Indian Journal of Pure and Applied Mathematics</span>, 52(2):529–541, 2021</div>
+            <div class="pub-doi">DOI: <a href="https://doi.org/10.1007/s13226-021-00055-2" target="_blank" rel="noopener noreferrer">10.1007/s13226-021-00055-2</a></div>
+          </div>
+          <svg class="pub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="pub-drawer" aria-hidden="true">
+          <p class="pub-abstract">Extension of generalized weak demicompactness using the measure of non-strict-singularity. New characterizations and stability theorems for essential spectra derived under this generalized compactness condition.</p>
+          <div class="pub-actions">
+            <a href="https://doi.org/10.1007/s13226-021-00055-2" target="_blank" rel="noopener noreferrer" class="pub-link pub-link-doi"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>DOI</a>
+            <a href="./papers/published/paper05.pdf" target="_blank" class="pub-link pub-link-pdf"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>PDF</a>
+            <a href="https://scholar.google.com/scholar?q=Generalized+weak+demicompactness+non-strict-singularity+Ferjani+Jeribi+Krichen+2021" target="_blank" rel="noopener noreferrer" class="pub-link pub-link-scholar"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Scholar</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="pub-item" data-type="published" role="listitem">
+        <div class="pub-header" onclick="togglePub(this)" aria-expanded="false" role="button" tabindex="0">
+          <span class="pub-num" aria-label="Publication 4">4.</span>
+          <div class="pub-main">
+            <div class="pub-title">Invariance of essential spectrum by means of generalized weak demicompactness <span class="pub-tag tag-chapter">Book Chapter</span></div>
+            <div class="pub-meta">I. Ferjani, A. Jeribi &amp; B. Krichen · <span class="pub-journal">Operator Theory</span> (De Gruyter), pp. 115–120, 2021</div>
+            <div class="pub-doi">DOI: <a href="https://doi.org/10.1515/9783110598193-008" target="_blank" rel="noopener noreferrer">10.1515/9783110598193-008</a></div>
+          </div>
+          <svg class="pub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="pub-drawer" aria-hidden="true">
+          <p class="pub-abstract">De Gruyter volume chapter proving invariance of essential spectrum under perturbations by generalized weakly demicompact operators, extending spectral stability to broad classes of operators in Banach spaces.</p>
+          <div class="pub-actions">
+            <a href="https://doi.org/10.1515/9783110598193-008" target="_blank" rel="noopener noreferrer" class="pub-link pub-link-doi"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>DOI</a>
+            <a href="./papers/published/paper04.pdf" target="_blank" class="pub-link pub-link-pdf"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>PDF</a>
+            <a href="https://scholar.google.com/scholar?q=Invariance+essential+spectrum+generalized+weak+demicompactness+Ferjani+Jeribi+Krichen+2021" target="_blank" rel="noopener noreferrer" class="pub-link pub-link-scholar"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Scholar</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="pub-item" data-type="published" role="listitem">
+        <div class="pub-header" onclick="togglePub(this)" aria-expanded="false" role="button" tabindex="0">
+          <span class="pub-num" aria-label="Publication 3">3.</span>
+          <div class="pub-main">
+            <div class="pub-title">Spectral properties for generalized weakly <em>S</em>-demicompact operators <span class="pub-tag tag-published">Published</span></div>
+            <div class="pub-meta">I. Ferjani, A. Jeribi &amp; B. Krichen · <span class="pub-journal">Linear and Multilinear Algebra</span>, pp. 1–19, 2020</div>
+            <div class="pub-doi">DOI: <a href="https://doi.org/10.1080/03081087.2020.1737633" target="_blank" rel="noopener noreferrer">10.1080/03081087.2020.1737633</a></div>
+          </div>
+          <svg class="pub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="pub-drawer" aria-hidden="true">
+          <p class="pub-abstract">Detailed study introducing generalized weakly S-demicompact operators and deriving results on essential spectra, Fredholm theory, and perturbation in Banach space settings.</p>
+          <div class="pub-actions">
+            <a href="https://doi.org/10.1080/03081087.2020.1737633" target="_blank" rel="noopener noreferrer" class="pub-link pub-link-doi"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>DOI</a>
+            <a href="./papers/published/paper03.pdf" target="_blank" class="pub-link pub-link-pdf"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>PDF</a>
+            <a href="https://scholar.google.com/scholar?q=Spectral+properties+generalized+weakly+S-demicompact+Ferjani+Jeribi+Krichen+2020" target="_blank" rel="noopener noreferrer" class="pub-link pub-link-scholar"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Scholar</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="pub-item" data-type="published" role="listitem">
+        <div class="pub-header" onclick="togglePub(this)" aria-expanded="false" role="button" tabindex="0">
+          <span class="pub-num" aria-label="Publication 2">2.</span>
+          <div class="pub-main">
+            <div class="pub-title">On Relative Essential Spectra of a 3×3 Operator Matrix involving Relative Generalized Weak Demicompactness <span class="pub-tag tag-published">Published</span></div>
+            <div class="pub-meta">I. Ferjani, A. Jeribi &amp; B. Krichen · <span class="pub-journal">Filomat</span>, 34(13):4271–4286, 2020</div>
+            <div class="pub-doi">DOI: <a href="https://doi.org/10.2298/FIL2013271F" target="_blank" rel="noopener noreferrer">10.2298/FIL2013271F</a></div>
+          </div>
+          <svg class="pub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="pub-drawer" aria-hidden="true">
+          <p class="pub-abstract">Analysis of relative essential spectra of 3×3 operator matrices, proving invariance and stability results via relative generalized weak demicompactness, combining block operator matrix methods with Banach space spectral analysis.</p>
+          <div class="pub-actions">
+            <a href="https://doi.org/10.2298/FIL2013271F" target="_blank" rel="noopener noreferrer" class="pub-link pub-link-doi"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>DOI</a>
+            <a href="./papers/published/paper02.pdf" target="_blank" class="pub-link pub-link-pdf"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>PDF</a>
+            <a href="https://scholar.google.com/scholar?q=Relative+Essential+Spectra+Operator+Matrix+Generalized+Weak+Demicompactness+Ferjani+2020" target="_blank" rel="noopener noreferrer" class="pub-link pub-link-scholar"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Scholar</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 1 -->
+      <article class="pub-item" data-type="published" role="listitem">
+        <div class="pub-header" onclick="togglePub(this)" aria-expanded="false" role="button" tabindex="0">
+          <span class="pub-num" aria-label="Publication 1">1.</span>
+          <div class="pub-main">
+            <div class="pub-title">Spectral Properties Involving Generalized Weakly Demicompact Operators <span class="pub-tag tag-published">Published</span></div>
+            <div class="pub-meta">I. Ferjani, A. Jeribi &amp; B. Krichen · <span class="pub-journal">Mediterranean Journal of Mathematics</span>, 16(30), 2019</div>
+            <div class="pub-doi">DOI: <a href="https://doi.org/10.1007/s00009-019-1320-3" target="_blank" rel="noopener noreferrer">10.1007/s00009-019-1320-3</a></div>
+          </div>
+          <svg class="pub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="pub-drawer" aria-hidden="true">
+          <p class="pub-abstract">Foundational paper introducing generalized weakly demicompact operators. Key results include characterizations via Fredholm theory and invariance of essential spectra, establishing the basis for a research programme on operator compactness generalizations.</p>
+          <div class="pub-actions">
+            <a href="https://doi.org/10.1007/s00009-019-1320-3" target="_blank" rel="noopener noreferrer" class="pub-link pub-link-doi"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>DOI</a>
+            <a href="./papers/published/paper01.pdf" target="_blank" class="pub-link pub-link-pdf"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>PDF</a>
+            <a href="https://scholar.google.com/scholar?q=Spectral+Properties+Generalized+Weakly+Demicompact+Operators+Ferjani+Jeribi+Krichen+2019" target="_blank" rel="noopener noreferrer" class="pub-link pub-link-scholar"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Scholar</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- S2 -->
+      <article class="pub-item" data-type="submitted" role="listitem">
+        <div class="pub-header" onclick="togglePub(this)" aria-expanded="false" role="button" tabindex="0">
+          <span class="pub-num" aria-label="Submitted paper 2">S2.</span>
+          <div class="pub-main">
+            <div class="pub-title">Characterizations of the <em>γ</em>-pseudo left-right Browder essential spectra involving Riesz perturbations <span class="pub-tag tag-submitted">Submitted</span></div>
+            <div class="pub-meta">I. Ferjani, M. Beghdadi &amp; B. Krichen</div>
+          </div>
+          <svg class="pub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="pub-drawer" aria-hidden="true">
+          <p class="pub-abstract">Under review. Develops characterizations of the γ-pseudo left-right Browder essential spectra for operators on Banach spaces, establishing stability results under Riesz perturbations and extending pseudospectral theory to generalized Browder settings.</p>
+          <div class="pub-actions">
+            <span style="font-size:0.78rem;color:var(--ink-lt);padding:5px 0;">Under review — preprint available on request</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- S1 -->
+      <article class="pub-item" data-type="submitted" role="listitem">
+        <div class="pub-header" onclick="togglePub(this)" aria-expanded="false" role="button" tabindex="0">
+          <span class="pub-num" aria-label="Work in progress 1">S1.</span>
+          <div class="pub-main">
+            <div class="pub-title">The class of order <em>L</em>-weakly and order <em>M</em>-weakly demicompact operators <span class="pub-tag tag-submitted">In Progress</span></div>
+            <div class="pub-meta">I. Ferjani</div>
+          </div>
+          <svg class="pub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="pub-drawer" aria-hidden="true">
+          <p class="pub-abstract">Work in progress. Introduces and investigates order L-weakly and order M-weakly demicompact operators in Banach lattice settings, aiming to unify and extend existing compactness-type operator classes with applications to spectral and lattice-theoretic analysis.</p>
+          <div class="pub-actions">
+            <span style="font-size:0.78rem;color:var(--ink-lt);padding:5px 0;">In preparation</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONFERENCES -->
+  <section id="conferences" class="section fade-in" aria-labelledby="conf-heading">
+    <div class="section-header">
+      <span class="section-num" aria-hidden="true">04</span>
+      <h2 class="section-title" id="conf-heading" data-i18n="sec_conf">Conferences &amp; Seminars</h2>
+      <div class="section-rule" aria-hidden="true"></div>
+    </div>
+
+    <h3 style="font-family:'Cormorant Garamond',serif;font-size:0.78rem;color:var(--ink-lt);margin-bottom:16px;letter-spacing:1px;text-transform:uppercase;font-weight:400;" data-i18n="lbl_comm">Communications</h3>
+    <div class="conf-grid" style="margin-bottom:32px;">
+      <div class="conf-item"><span class="conf-badge">6.</span><div><div class="conf-title">ICAOTA 2026 — Characterization of Relative Generalized Weak Demicompact Operators</div><div class="conf-event" data-i18n="conf6_event">International Conference on Advances in Operator Theory and Applications</div><div class="conf-meta">Hammamet, 23–26 March 2026</div></div></div>
+      <div class="conf-item"><span class="conf-badge">5.</span><div><div class="conf-title">ICOT 2025 — Extensions of Weak Demicompactness Through Measures of Non-Strict Singularity</div><div class="conf-event" data-i18n="conf5_event">International Conference on Operator Theory</div><div class="conf-meta">Hammamet, 22–24 December 2025</div></div></div>
+      <div class="conf-item"><span class="conf-badge">4.</span><div><div class="conf-title">ICOT 2023 — Characterization of generalized weak demicompactness</div><div class="conf-event" data-i18n="conf5_event">International Conference on Operator Theory</div><div class="conf-meta">Sousse, 17–22 December 2023</div></div></div>
+      <div class="conf-item"><span class="conf-badge">3.</span><div><div class="conf-title">ICAAM 2022 — Characterization of generalized weakly demicompact operator on Banach space</div><div class="conf-event" data-i18n="conf3_event">International Conference on Advances in Applied Mathematics</div><div class="conf-meta">Djerba, 19–22 December 2022</div></div></div>
+      <div class="conf-item"><span class="conf-badge">2.</span><div><div class="conf-title">ICAAM 2019 — Generalized weak demicompactness involving measures of non-strict-singularity</div><div class="conf-event" data-i18n="conf3_event">International Conference on Advances in Applied Mathematics</div><div class="conf-meta">Hammamet, 15–19 December 2019</div></div></div>
+      <div class="conf-item"><span class="conf-badge">1.</span><div><div class="conf-title">ICOT 2018 — Generalized weakly demicompact linear operators</div><div class="conf-event" data-i18n="conf5_event">International Conference on Operator Theory</div><div class="conf-meta">Hammamet, 30 April – 3 May 2018</div></div></div>
+    </div>
+
+    <h3 style="font-family:'Cormorant Garamond',serif;font-size:0.78rem;color:var(--ink-lt);margin-bottom:16px;letter-spacing:1px;text-transform:uppercase;font-weight:400;" data-i18n="lbl_stage">Seminars &amp; Research Stay</h3>
+    <div class="conf-grid">
+      <div class="stage-item"><span class="conf-badge" style="color:var(--rose-lt);" aria-hidden="true">⌑</span><div><div class="conf-title" data-i18n="sem1_title">Seminar — On Julia-type inequalities for operators</div><div class="conf-meta">Institut Camille Jordan, Working Group "Operator Theory and Complex Analysis" · 18 October 2018</div></div></div>
+      <div class="stage-item"><span class="conf-badge" style="color:var(--rose-lt);" aria-hidden="true">⌑</span><div><div class="conf-title" data-i18n="sem2_title">Research Stay — Transfer Formulae and Julia Inequalities for Operators</div><div class="conf-meta">Institut Camille Jordan (Lyon) · with Prof. Gilles Cassier · Sept.–Oct. 2018</div></div></div>
+    </div>
+  </section>
+
+  <!-- TEACHING -->
+  <section id="teaching" class="section fade-in" aria-labelledby="teach-heading">
+    <div class="section-header">
+      <span class="section-num" aria-hidden="true">05</span>
+      <h2 class="section-title" id="teach-heading" data-i18n="sec_teach">Teaching</h2>
+      <div class="section-rule" aria-hidden="true"></div>
+    </div>
+    <div class="teaching-grid">
+
+      <div class="teach-card">
+        <div class="teach-header open" onclick="toggleTeach(this)">
+          <div class="teach-header-left">
+            <span class="teach-period">2025 – 2026</span>
+            <div><div class="teach-inst">ISTMT</div><div class="teach-inst-full" data-i18n="pos6_inst_sh">Higher Institute of Medical Technologies of Tunis</div></div>
+          </div>
+          <svg class="teach-chevron open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="teach-body open"><div class="course-chips">
+          <span class="course-chip">Analysis — GBM Cycle Yr 1 <span class="level">Cycle</span></span>
+          <span class="course-chip">Analysis — GBM Licence Yr 1 <span class="level">Licence</span></span>
+        </div></div>
+      </div>
+
+      <div class="teach-card">
+        <div class="teach-header" onclick="toggleTeach(this)">
+          <div class="teach-header-left">
+            <span class="teach-period">2024 – 2025</span>
+            <div><div class="teach-inst">ESPRIT</div><div class="teach-inst-full" data-i18n="pos3_inst_sh">Private School of Engineering and Technology</div></div>
+          </div>
+          <svg class="teach-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="teach-body"><div class="course-chips">
+          <span class="course-chip">Mathematics 1 <span class="level">Yr 1</span> <span class="hours">84h</span></span>
+          <span class="course-chip">Mathematics 2 <span class="level">Yr 1</span> <span class="hours">84h</span></span>
+          <span class="course-chip">Mathematics 3 <span class="level">Yr 2</span> <span class="hours">84h</span></span>
+          <span class="course-chip">Mathematics 4 <span class="level">Yr 2</span> <span class="hours">84h</span></span>
+        </div></div>
+      </div>
+
+      <div class="teach-card">
+        <div class="teach-header" onclick="toggleTeach(this)">
+          <div class="teach-header-left">
+            <span class="teach-period">2023 – 2024</span>
+            <div><div class="teach-inst">TEK-UP</div><div class="teach-inst-full" data-i18n="pos5_inst_sh">Private Higher School of Technology and Engineering</div></div>
+          </div>
+          <svg class="teach-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="teach-body"><div class="course-chips">
+          <span class="course-chip">Analysis I <span class="level">Yr 1</span> <span class="hours">42h</span></span>
+          <span class="course-chip">Probability &amp; Statistics <span class="level">Yr 3</span> <span class="hours">42h</span></span>
+        </div></div>
+      </div>
+
+      <div class="teach-card">
+        <div class="teach-header" onclick="toggleTeach(this)">
+          <div class="teach-header-left">
+            <span class="teach-period">2021 – 2023</span>
+            <div><div class="teach-inst">ENIT</div><div class="teach-inst-full" data-i18n="pos4_inst_sh">National Engineering School of Tunis</div></div>
+          </div>
+          <svg class="teach-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="teach-body"><div class="course-chips">
+          <span class="course-chip">Probability &amp; Statistics <span class="level">Yr 3</span> <span class="hours">42h</span></span>
+        </div></div>
+      </div>
+
+      <div class="teach-card">
+        <div class="teach-header" onclick="toggleTeach(this)">
+          <div class="teach-header-left">
+            <span class="teach-period">2021 – 2022</span>
+            <div><div class="teach-inst">ESPRIT</div><div class="teach-inst-full" data-i18n="pos3_inst_sh">Private School of Engineering and Technology</div></div>
+          </div>
+          <svg class="teach-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="teach-body"><div class="course-chips">
+          <span class="course-chip">Mathematics 1 <span class="level">Yr 1</span> <span class="hours">84h</span></span>
+          <span class="course-chip">Mathematics 2 <span class="level">Yr 1</span> <span class="hours">84h</span></span>
+        </div></div>
+      </div>
+
+      <div class="teach-card">
+        <div class="teach-header" onclick="toggleTeach(this)">
+          <div class="teach-header-left">
+            <span class="teach-period">2020 – 2021</span>
+            <div><div class="teach-inst">ISIMM</div><div class="teach-inst-full" data-i18n="pos2_inst_sh">Higher Institute of Informatics and Mathematics of Monastir</div></div>
+          </div>
+          <svg class="teach-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="teach-body"><div class="course-chips">
+          <span class="course-chip">Algebra &amp; Analysis <span class="level">Yr 1–2</span></span>
+          <span class="course-chip">Numerical Analysis <span class="level">Yr 2</span> <span class="hours">21h</span></span>
+          <span class="course-chip">Numerical Simulation (Python) <span class="level">Yr 2</span> <span class="hours">42h</span></span>
+          <span class="course-chip">Probability &amp; Statistics <span class="level">Yr 3</span> <span class="hours">42h</span></span>
+        </div></div>
+      </div>
+
+      <div class="teach-card">
+        <div class="teach-header" onclick="toggleTeach(this)">
+          <div class="teach-header-left">
+            <span class="teach-period">2019 – 2020</span>
+            <div><div class="teach-inst">FSS</div><div class="teach-inst-full" data-i18n="pos1_inst_sh">Faculty of Sciences of Sfax</div></div>
+          </div>
+          <svg class="teach-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="teach-body"><div class="course-chips">
+          <span class="course-chip">Algebra &amp; Analysis <span class="level">Yr 1 CS</span> <span class="hours">84h</span></span>
+        </div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section fade-in" aria-labelledby="skills-heading">
+    <div class="section-header">
+      <span class="section-num" aria-hidden="true">06</span>
+      <h2 class="section-title" id="skills-heading" data-i18n="sec_skills">Skills &amp; Certifications</h2>
+      <div class="section-rule" aria-hidden="true"></div>
+    </div>
+
+    <div class="skills-grid" style="margin-bottom:32px;">
+      <div class="skill-card">
+        <div class="skill-card-title" data-i18n="skill1_title">Programming</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span><span class="skill-tag">MATLAB</span><span class="skill-tag">R</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-title" data-i18n="skill2_title">Tools &amp; Systems</div>
+        <div class="skill-tags">
+          <span class="skill-tag">LaTeX</span><span class="skill-tag">Linux</span><span class="skill-tag">Windows</span><span class="skill-tag">Microsoft Office</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-title" data-i18n="skill3_title">Languages</div>
+        <div class="lang-item"><div class="lang-name"><span data-i18n="lang_ar">Arabic (Native)</span><span class="lang-level">C2</span></div><div class="lang-bar-track"><div class="lang-bar-fill" style="width:100%"></div></div></div>
+        <div class="lang-item"><div class="lang-name"><span data-i18n="lang_fr">French (Fluent)</span><span class="lang-level">C1</span></div><div class="lang-bar-track"><div class="lang-bar-fill" style="width:85%"></div></div></div>
+        <div class="lang-item"><div class="lang-name"><span data-i18n="lang_en">English (Advanced)</span><span class="lang-level">B2–C1</span></div><div class="lang-bar-track"><div class="lang-bar-fill" style="width:80%"></div></div></div>
+      </div>
+    </div>
+
+    <h3 class="editorial-title" data-i18n="lbl_certs" style="margin-bottom:14px;">Certifications</h3>
+    <div class="card-list" style="margin-bottom:40px;">
+      <div class="small-card"><div class="small-card-dot" style="background:var(--sage);"></div><div><div class="small-card-title">Understanding and Visualizing Data with Python<span class="ptag">Coursera · University of Michigan · 15 Aug 2022</span></div><div class="small-card-sub">Credential ID: E54JZ5JMBW87</div></div></div>
+      <div class="small-card"><div class="small-card-dot" style="background:var(--sage);"></div><div><div class="small-card-title">Inferential Statistical Analysis with Python<span class="ptag">Coursera · University of Michigan · 23 Nov 2022</span></div><div class="small-card-sub">Credential ID: MSUYWDT79HY6</div></div></div>
+      <div class="small-card"><div class="small-card-dot" style="background:var(--rose-lt);"></div><div><div class="small-card-title" data-i18n="cert_matlab">Exploitation of results under Matlab<span class="ptag">University of Sfax · April 2018</span></div></div></div>
+      <div class="small-card"><div class="small-card-dot" style="background:var(--rose-lt);"></div><div><div class="small-card-title" data-i18n="cert_did">Teaching Didactics<span class="ptag">University of Sfax · March 2018</span></div></div></div>
+    </div>
+
+    <div class="editorial-section">
+      <h3 class="editorial-title" data-i18n="lbl_edit">Editorial Activities</h3>
+      <div class="editorial-list">
+
+        <div class="ed-card">
+          <div class="ed-header open" onclick="toggleEd(this)">
+            <div class="ed-header-left">
+              <span class="ed-role-badge role-editor" data-i18n="edit_role">Editor</span>
+              <div><div class="ed-journal-name">Advanced Studies Euro-Tbilisi Mathematical Journal (ASETMJ)</div><div class="ed-years">2024 – present</div></div>
+            </div>
+            <svg class="ed-chevron open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+          <div class="ed-body open">
+            <div class="ed-info-grid">
+              <span class="ed-info-label">Website</span><span class="ed-info-val"><a href="https://tcms.org.ge/Journals/ASETMJ/" target="_blank" rel="noopener noreferrer">https://tcms.org.ge/</a></span>
+              <span class="ed-info-label">Publisher</span><span class="ed-info-val">Tbilisi Centre for Mathematical Sciences</span>
+              <span class="ed-info-label">Quartile</span><span class="ed-info-val"><span class="q-badge q3">Q3</span> Algebra and Number Theory (Scopus) · <span class="q-badge q4">Q4</span> Analysis (Scopus)</span>
+              <span class="ed-info-label">Scope</span><span class="ed-info-val">Functional Analysis, Operator Theory, Spectral Theory, Applied Mathematics</span>
+              <span class="ed-info-label">Indexing</span><span class="ed-info-val">Scopus · Web of Science (ESCI) · MathSciNet · zbMATH</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ed-card">
+          <div class="ed-header" onclick="toggleEd(this)">
+            <div class="ed-header-left">
+              <span class="ed-role-badge role-reviewer">Reviewer</span>
+              <div><div class="ed-journal-name">Abstract and Applied Analysis</div><div class="ed-years">2023</div></div>
+            </div>
+            <svg class="ed-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+          <div class="ed-body">
+            <div class="ed-info-grid">
+              <span class="ed-info-label">Publisher</span><span class="ed-info-val">Hindawi / Wiley</span>
+              <span class="ed-info-label">Quartile</span><span class="ed-info-val"><span class="q-badge q4">Q4</span> Applied Mathematics (Scopus)</span>
+              <span class="ed-info-label">Indexing</span><span class="ed-info-val">Scopus · Web of Science</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ed-card">
+          <div class="ed-header" onclick="toggleEd(this)">
+            <div class="ed-header-left">
+              <span class="ed-role-badge role-reviewer">Reviewer</span>
+              <div><div class="ed-journal-name">Journal of Inequalities and Applications</div><div class="ed-years">2025</div></div>
+            </div>
+            <svg class="ed-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+          <div class="ed-body">
+            <div class="ed-info-grid">
+              <span class="ed-info-label">Publisher</span><span class="ed-info-val">SpringerOpen</span>
+              <span class="ed-info-label">Quartile</span><span class="ed-info-val"><span class="q-badge q2">Q2</span> Mathematics (Scopus)</span>
+              <span class="ed-info-label">Indexing</span><span class="ed-info-val">Scopus · Web of Science (SCIE) · MathSciNet</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ed-card">
+          <div class="ed-header" onclick="toggleEd(this)">
+            <div class="ed-header-left">
+              <span class="ed-role-badge role-reviewer">Reviewer</span>
+              <div><div class="ed-journal-name">Advanced Studies Euro-Tbilisi Mathematical Journal (ASETMJ)</div><div class="ed-years">2025 – 2026</div></div>
+            </div>
+            <svg class="ed-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+          <div class="ed-body">
+            <div class="ed-info-grid">
+              <span class="ed-info-label">Quartile</span><span class="ed-info-val"><span class="q-badge q4">Q4</span> Analysis (Scopus)</span>
+              <span class="ed-info-label">Indexing</span><span class="ed-info-val">Scopus · Web of Science (ESCI) · MathSciNet · zbMATH</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLABORATORS -->
+  <section id="collaborators" class="section fade-in" aria-labelledby="collab-heading">
+    <div class="section-header">
+      <span class="section-num" aria-hidden="true">07</span>
+      <h2 class="section-title" id="collab-heading" data-i18n="sec_ref">Collaborators</h2>
+      <div class="section-rule" aria-hidden="true"></div>
+    </div>
+    <div class="collab-section">
+      <h3 class="collab-title" data-i18n="collab_title">Collaborators</h3>
+      <p class="collab-subtitle" data-i18n="collab_sub">Research collaborations in functional analysis, operator theory, and related fields</p>
+      <div class="collab-grid" role="list">
+        <div class="collab-card" role="listitem"><div class="collab-avatar" aria-hidden="true">BK</div><div><div class="collab-name">Prof. Bilel Krichen</div><div class="collab-inst">University of Sfax, Tunisia</div></div></div>
+        <div class="collab-card" role="listitem"><div class="collab-avatar" aria-hidden="true">AJ</div><div><div class="collab-name">Prof. Aref Jeribi</div><div class="collab-inst">University of Sfax, Tunisia</div></div></div>
+        <div class="collab-card" role="listitem"><div class="collab-avatar" aria-hidden="true">MB</div><div><div class="collab-name">Prof. Mhamed Beghdadi</div><div class="collab-inst">University of Saida-Dr. Moulay Tahar, Algeria</div></div></div>
+        <div class="collab-card" role="listitem"><div class="collab-avatar" aria-hidden="true">OK</div><div><div class="collab-name">Dr. Omaima Kchaou</div><div class="collab-inst">Tunisia</div></div></div>
+        <div class="collab-card" role="listitem"><div class="collab-avatar" aria-hidden="true">RA</div><div><div class="collab-name">Dr. Rabeb Aydi</div><div class="collab-inst">Tunisia</div></div></div>
+      </div>
+      <div class="open-collab">
+        <div class="open-collab-title" data-i18n="open_title">Open to New Collaborations</div>
+        <div class="open-topics">
+          <span class="open-topic">Banach Lattices</span>
+          <span class="open-topic">Computational Mathematics</span>
+          <span class="open-topic">Spectral Theory</span>
+          <span class="open-topic">Operator Theory</span>
+          <span class="open-topic">Functional Analysis</span>
+          <span class="open-topic">Applied Mathematics</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-name">Imen FERJANI</div>
+    <div class="footer-sub" data-i18n="footer_sub">PhD in Mathematics · Functional Analysis &amp; Operator Theory</div>
+    <div style="display:flex;justify-content:center;gap:16px;margin-bottom:20px;flex-wrap:wrap;">
+      <a href="https://www.researchgate.net/profile/Imen-Ferjani" target="_blank" rel="noopener noreferrer" class="social-link" style="font-size:0.72rem;">ResearchGate</a>
+      <a href="https://scholar.google.com/citations?user=QKMAQkEAAAAJ" target="_blank" rel="noopener noreferrer" class="social-link" style="font-size:0.72rem;">Google Scholar</a>
+      <a href="https://orcid.org/0000-0003-1482-4804" target="_blank" rel="noopener noreferrer" class="social-link" style="font-size:0.72rem;">ORCID</a>
+      <a href="mailto:imenoferjani@yahoo.fr" class="social-link" style="font-size:0.72rem;">✉ imenoferjani@yahoo.fr</a>
+    </div>
+    <!-- CV Download in Footer -->
+    <div style="display:flex;justify-content:center;gap:12px;margin-bottom:20px;flex-wrap:wrap;">
+      <a id="footerCvEn" href="./cv/cv_en.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-cv" style="font-size:0.78rem;padding:8px 18px;" aria-label="View CV in English">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span data-i18n="btn_cv_en">CV (English)</span>
+      </a>
+      <a id="footerCvFr" href="./cv/cv_fr.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-cv" style="font-size:0.78rem;padding:8px 18px;" aria-label="Voir le CV en français">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span data-i18n="btn_cv_fr">CV (Français)</span>
+      </a>
+    </div>
+    <div class="footer-line" data-i18n="footer_copy">© 2026 Imen Ferjani · Laboratory of Physics-Mathematics, FSS, University of Sfax</div>
+    <div class="footer-line" data-i18n="footer_copy2">Road of Soukra Km 3.5, B.P. 1171, 3000, Sfax, Tunisia</div>
+    <div class="footer-line" style="margin-top:10px;">Updated: 17 / 06 / 2026</div>
+  </div>
+</footer>
+
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top" title="Back to top">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script>
+// ── i18n DATA ──
+const i18n = {
+  en: {
+    nav_about:'About', nav_edu:'Education', nav_pos:'Positions', nav_pub:'Publications',
+    nav_conf:'Conferences', nav_teach:'Teaching', nav_skills:'Skills', nav_ref:'Collaborators',
+    nav_cv:'CV PDF',
+    hero_eyebrow:'Doctor of Mathematics · Operator Theory',
+    hero_title:'Researcher · University of Sfax<br>Laboratory of Physics-Mathematics, Faculty of Sciences of Sfax',
+    int1:'Probability & Statistics', int2:'Functional Analysis', int3:'Operator Theory',
+    int4:'Spectral Analysis', int5:'Linear Algebra', int6:'Numerical Analysis',
+    btn_pubs:'View Publications', btn_contact:'Contact',
+    btn_cv_en:'CV (English)', btn_cv_fr:'CV (Français)',
+    stat_pub:'Articles<br>Published', stat_sub:'Submitted /<br>In Progress', stat_conf:'Conf.<br>Presented',
+    stat_citations:'Citations',
+    sec_edu:'Academic Background', sec_pos:'Professional Experience', sec_pub:'Publications',
+    sec_conf:'Conferences & Seminars', sec_teach:'Teaching', sec_skills:'Skills & Certifications',
+    sec_ref:'Collaborators',
+    edu1_title:'PhD in Mathematics', edu1_inst:'Faculty of Sciences of Sfax (FSS) — University of Sfax',
+    edu1_subj:'Generalized weakly demicompact operators',
+    edu2_title:'M.Sc. Research in Mathematics', edu2_inst:'Faculty of Sciences of Monastir — University of Monastir',
+    edu2_subj:'Multifractal analysis of branching random walks in ℝ<sup>d</sup>',
+    edu3_title:'B.Sc. in Mathematics', edu3_inst:'Faculty of Sciences of Monastir — University of Monastir',
+    edu4_title:'Baccalaureate in Mathematics',
+    lbl_subject:'Subject:', lbl_dir:'Supervisor:', lbl_rep:'Reviewers:', lbl_title:'Title:',
+    pos1_title:'Contract Assistant Professor', pos2_title:'Part-time Teacher',
+    pos1_inst:'Faculty of Sciences of Sfax (FSS) — University of Sfax',
+    pos2_inst:'Higher Institute of Informatics and Mathematics of Monastir (ISIMM) — University of Monastir',
+    pos3_inst:'Private School of Engineering and Technology (ESPRIT)',
+    pos4_inst:'National Engineering School of Tunis (ENIT) — University of Tunis El Manar',
+    pos5_inst:'Private Higher School of Technology and Engineering (TEK-UP)',
+    pos6_inst:'Higher Institute of Medical Technologies of Tunis (ISTMT) — University of Tunis El Manar',
+    pos1_inst_sh:'Faculty of Sciences of Sfax',
+    pos2_inst_sh:'Higher Institute of Informatics and Mathematics of Monastir',
+    pos3_inst_sh:'École Supérieure Privée d\'Ingénierie et de Technologie',
+    pos4_inst_sh:'National Engineering School of Tunis',
+    pos5_inst_sh:'Private Higher School of Technology and Engineering',
+    pos6_inst_sh:'Higher Institute of Medical Technologies of Tunis',
+    filter_all:'All (14)', filter_pub:'Published (12)', filter_sub:'Submitted / In Progress (2)',
+    conf6_event:'International Conference on Advances in Operator Theory and Applications',
+    conf5_event:'International Conference on Operator Theory',
+    conf3_event:'International Conference on Advances in Applied Mathematics',
+    lbl_comm:'Communications', lbl_stage:'Seminars & Research Stay',
+    sem1_title:'Seminar — On Julia-type inequalities for operators',
+    sem2_title:'Research Stay — Transfer Formulae and Julia Inequalities for Operators',
+    skill1_title:'Programming', skill2_title:'Tools & Systems', skill3_title:'Languages',
+    lang_ar:'Arabic (Native)', lang_fr:'French (Fluent)', lang_en:'English (Advanced)',
+    lbl_certs:'Certifications', lbl_edit:'Editorial Activities',
+    cert_matlab:'Exploitation of results under Matlab', cert_did:'Teaching Didactics',
+    edit_role:'Editor',
+    collab_title:'Collaborators',
+    collab_sub:'Research collaborations in functional analysis, operator theory, and related fields',
+    open_title:'Open to New Collaborations',
+    footer_sub:'PhD in Mathematics · Functional Analysis & Operator Theory',
+    footer_copy:'© 2026 Imen Ferjani · Laboratory of Physics-Mathematics, FSS, University of Sfax',
+    footer_copy2:'Road of Soukra Km 3.5, B.P. 1171, 3000, Sfax, Tunisia',
+    visitor_you:'Welcome to my website!',
+    visitor_total:'visit(s) to this site',
+  },
+  fr: {
+    nav_about:'À propos', nav_edu:'Formation', nav_pos:'Postes', nav_pub:'Publications',
+    nav_conf:'Conférences', nav_teach:'Enseignement', nav_skills:'Compétences', nav_ref:'Collaborateurs',
+    nav_cv:'CV PDF',
+    hero_eyebrow:'Docteur en Mathématiques · Théorie des Opérateurs',
+    hero_title:'Chercheuse · Université de Sfax<br>Laboratoire de Physique-Mathématiques, Faculté des Sciences de Sfax',
+    int1:'Probabilités & Statistiques', int2:'Analyse Fonctionnelle', int3:'Théorie des Opérateurs',
+    int4:'Analyse Spectrale', int5:'Algèbre Linéaire', int6:'Analyse Numérique',
+    btn_pubs:'Voir les Publications', btn_contact:'Contact',
+    btn_cv_en:'CV (English)', btn_cv_fr:'CV (Français)', 
+    stat_pub:'Articles<br>Publiés', stat_sub:'Soumis /<br>En cours', stat_conf:'Conf.<br>Présentées',
+    stat_citations:'Citations',
+    sec_edu:'Cursus Universitaire', sec_pos:'Expériences Professionnelles', sec_pub:'Publications',
+    sec_conf:'Conférences & Séminaires', sec_teach:'Enseignement', sec_skills:'Compétences & Certifications',
+    sec_ref:'Collaborateurs',
+    edu1_title:'Doctorat en Mathématiques', edu1_inst:'Faculté des Sciences de Sfax (FSS) — Université de Sfax',
+    edu1_subj:'Generalized weakly demicompact operators',
+    edu2_title:'Mastère de Recherche en Mathématiques', edu2_inst:'Faculté des Sciences de Monastir — Université de Monastir',
+    edu2_subj:'Analyse multifractale de marches aléatoires de branchement dans ℝ<sup>d</sup>',
+    edu3_title:'Licence Fondamentale en Mathématiques', edu3_inst:'Faculté des Sciences de Monastir — Université de Monastir',
+    edu4_title:'Baccalauréat en Mathématiques',
+    lbl_subject:'Sujet :', lbl_dir:'Directeur :', lbl_rep:'Rapporteurs :', lbl_title:'Titre :',
+    pos1_title:'Maître Assistante Contractuelle', pos2_title:'Enseignante Vacataire',
+    pos1_inst:'Faculté des Sciences de Sfax (FSS) — Université de Sfax',
+    pos2_inst:"Institut Supérieur d'Informatiques et Mathématiques de Monastir (ISIMM) — Université de Monastir",
+    pos3_inst:"École Supérieure Privée d'Ingénierie et de Technologie (ESPRIT)",
+    pos4_inst:"École Nationale d'Ingénieur de Tunis (ENIT) — Université de Tunis El Manar",
+    pos5_inst:"École Privée Supérieure de Technologie et d'Ingénierie (TEK-UP)",
+    pos6_inst:"Institut Supérieur des Technologies Médicales de Tunis (ISTMT) — Université de Tunis El Manar",
+    pos1_inst_sh:'Faculté des Sciences de Sfax',
+    pos2_inst_sh:"Institut Supérieur d'Informatiques et Mathématiques de Monastir",
+    pos3_inst_sh:"École Supérieure Privée d'Ingénierie et de Technologie",
+    pos4_inst_sh:"École Nationale d'Ingénieur de Tunis",
+    pos5_inst_sh:"École Privée Supérieure de Technologie et d'Ingénierie",
+    pos6_inst_sh:"Institut Supérieur des Technologies Médicales de Tunis",
+    filter_all:'Tout (14)', filter_pub:'Publiés (12)', filter_sub:'Soumis / En cours (2)',
+    conf6_event:'International Conference on Advances in Operator Theory and Applications',
+    conf5_event:'Conférence Internationale sur la Théorie des Opérateurs',
+    conf3_event:'Conférence Internationale sur les Avancées en Mathématiques Appliquées',
+    lbl_comm:'Communications', lbl_stage:'Séminaires & Stage de Recherche',
+    sem1_title:'Séminaire — Sur des inégalités du type Julia pour les opérateurs',
+    sem2_title:'Stage de Recherche — Formules de Transfert et Inégalités de Julia pour les Opérateurs',
+    skill1_title:'Programmation', skill2_title:'Outils & Systèmes', skill3_title:'Langues',
+    lang_ar:'Arabe (Maternelle)', lang_fr:'Français (Courant)', lang_en:'Anglais (Avancé)',
+    lbl_certs:'Certifications', lbl_edit:'Activités Éditoriales',
+    cert_matlab:'Exploitation des résultats sous Matlab', cert_did:"Didactique d'enseignement",
+    edit_role:'Éditrice',
+    collab_title:'Collaborateurs',
+    collab_sub:'Collaborations de recherche en analyse fonctionnelle, théorie des opérateurs et domaines connexes',
+    open_title:'Ouverte à de nouvelles collaborations',
+    footer_sub:'Docteur en Mathématiques · Analyse Fonctionnelle & Théorie des Opérateurs',
+    footer_copy:'© 2026 Imen Ferjani · Laboratoire de Physique-Mathématiques, FSS, Université de Sfax',
+    footer_copy2:'Rue de Soukra Km 3.5, B.P. 1171, 3000, Sfax, Tunisie',
+    visitor_you:'Bienvenue sur mon site web !',
+    visitor_total:'visite(s) sur ce site',
+  }
+};
+
+let currentLang = 'en';
+
+function setLang(lang) {
+  currentLang = lang;
+  document.documentElement.lang = lang;
+
+  // Toggle button states
+  const btnEN = document.getElementById('btnEN');
+  const btnFR = document.getElementById('btnFR');
+  btnEN.classList.toggle('active', lang === 'en');
+  btnFR.classList.toggle('active', lang === 'fr');
+  btnEN.setAttribute('aria-pressed', lang === 'en' ? 'true' : 'false');
+  btnFR.setAttribute('aria-pressed', lang === 'fr' ? 'true' : 'false');
+
+  // Apply all translations
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (i18n[lang][key] !== undefined) el.innerHTML = i18n[lang][key];
+  });
+
+  // CV download button in nav — always show both, but highlight active lang
+  const navCvBtn = document.getElementById('navCvBtn');
+  if (lang === 'fr') {
+    navCvBtn.href = './cv/cv_fr.pdf';
+    navCvBtn.setAttribute('aria-label', 'Télécharger le CV en français');
+  } else {
+    navCvBtn.href = './cv/cv_en.pdf';
+    navCvBtn.setAttribute('aria-label', 'Download CV in English');
+  }
+
+  // Hero CV buttons
+  const cvBtnEn = document.getElementById('cvBtnEn');
+  const cvBtnFr = document.getElementById('cvBtnFr');
+  // Show both buttons always — both CVs are useful regardless of language
+  cvBtnEn.style.display = '';
+  cvBtnFr.style.display = '';
+
+  updateVisitorDisplay();
+}
+
+// ── VISITOR COUNTER (localStorage based) ──
+function updateVisitorDisplay() {
+  const t = i18n[currentLang];
+  const count = parseInt(localStorage.getItem('if_visit_count') || '0');
+  if (count > 0) {
+    document.getElementById('visitor-text').textContent = t.visitor_you;
+    document.getElementById('visitor-num-text').textContent = count + ' ' + t.visitor_total;
+  }
+}
+
+function initVisitor() {
+  let count = parseInt(localStorage.getItem('if_visit_count') || '0');
+  let hasVisited = sessionStorage.getItem('if_visited');
+  if (!hasVisited) {
+    count++;
+    localStorage.setItem('if_visit_count', count);
+    sessionStorage.setItem('if_visited', '1');
+  }
+  updateVisitorDisplay();
+}
+
+// ── PUBLICATION FILTER ──
+function filterPubs(type, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  document.querySelectorAll('.pub-item').forEach(item => {
+    item.style.display = (type === 'all' || item.dataset.type === type) ? '' : 'none';
+  });
+}
+
+// ── PUBLICATION ACCORDION ──
+function togglePub(header) {
+  const drawer = header.nextElementSibling;
+  const chevron = header.querySelector('.pub-chevron');
+  const isOpen = drawer.classList.contains('open');
+
+  // close all others
+  document.querySelectorAll('.pub-drawer.open').forEach(d => { d.classList.remove('open'); d.setAttribute('aria-hidden', 'true'); });
+  document.querySelectorAll('.pub-chevron.open').forEach(c => c.classList.remove('open'));
+  document.querySelectorAll('.pub-header[aria-expanded="true"]').forEach(h => h.setAttribute('aria-expanded', 'false'));
+
+  if (!isOpen) {
+    drawer.classList.add('open');
+    drawer.setAttribute('aria-hidden', 'false');
+    chevron.classList.add('open');
+    header.setAttribute('aria-expanded', 'true');
+  }
+}
+
+// Keyboard support
+document.addEventListener('keydown', e => {
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.classList.contains('pub-header')) {
+    e.preventDefault(); togglePub(e.target);
+  }
+});
+
+// ── TEACH ACCORDION ──
+function toggleTeach(header) {
+  const body = header.nextElementSibling;
+  const chevron = header.querySelector('.teach-chevron');
+  const isOpen = header.classList.contains('open');
+  header.classList.toggle('open', !isOpen);
+  chevron.classList.toggle('open', !isOpen);
+  body.classList.toggle('open', !isOpen);
+}
+
+// ── EDITORIAL ACCORDION ──
+function toggleEd(header) {
+  const body = header.nextElementSibling;
+  const chevron = header.querySelector('.ed-chevron');
+  const isOpen = header.classList.contains('open');
+  header.classList.toggle('open', !isOpen);
+  chevron.classList.toggle('open', !isOpen);
+  body.classList.toggle('open', !isOpen);
+}
+
+// ── MOBILE MENU ──
+function toggleMenu() {
+  const nav = document.getElementById('navLinks');
+  const btn = document.getElementById('hamburger');
+  const open = nav.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+
+// Close nav when a link is clicked (mobile)
+document.querySelectorAll('.nav-links a').forEach(a => {
+  a.addEventListener('click', () => {
+    document.getElementById('navLinks').classList.remove('open');
+    document.getElementById('hamburger').setAttribute('aria-expanded', 'false');
+  });
+});
+
+// ── ACTIVE NAV ──
+function updateActiveNav() {
+  const sections = document.querySelectorAll('section[id]');
+  const links = document.querySelectorAll('.nav-links a');
+  let current = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 80) current = s.id; });
+  links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
+  document.getElementById('back-top').classList.toggle('visible', window.scrollY > 400);
+}
+
+// ── FADE IN ──
+function initFadeIn() {
+  if (!window.IntersectionObserver) return;
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+}
+
+// ── INIT ──
+window.addEventListener('scroll', updateActiveNav, { passive: true });
+document.addEventListener('DOMContentLoaded', () => {
+  initFadeIn();
+  updateActiveNav();
+  initVisitor();
+  setLang('en');
+});
+</script>
+</body>
+</html>
